@@ -1,0 +1,93 @@
+
+.site-footer{
+    
+  .fotr-container{
+    max-width:1800px;
+    margin: 0 auto;
+    width:100%;
+
+    .leftColm{
+      gap:40px;
+      
+      h3{
+        color: var(--BJS-Mid-Gray, #747E87);
+        font-family: "Gotham Black";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+      .nav{
+
+        a.nav-link{
+        color: var(--BJS-Mid-Gray, #747E87);
+        font-family: "Gotham Book";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 5px 0;
+        text-align: left;
+        }
+      }
+      .fotrSocial img {
+        margin-right: 10px;
+      }
+    }
+    .rightColm{
+        p a{
+        color: var(--BJS-Mid-Gray, #747E87);
+        font-family: "Gotham Book";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: underline;
+
+        }
+    button.headOffice{
+        color: #919495;
+        font-family: Eveleth;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 950;
+        line-height: normal;    
+        border: none;
+        background: #fff;
+        padding: 17px 20px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 5px 1px #000;
+    }
+    h4{
+        color: var(--BJS-Mid-Gray, #747E87);
+        font-family: "Gotham Book";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: underline;
+        padding-left:25px;
+        position: relative;
+        width: fit-content;
+        margin-left: auto;
+    }
+    h4:before{
+        content:"";
+        background: url('');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        left:0;
+        top:50%;
+        transform: translateY(-50%);
+        width: 18px;
+        height: 15px;
+      }
+    }
+
+
+  } 
+}
