@@ -9,7 +9,7 @@ const Footer = () => {
     <div className='site-footer'>
         <div className='fotr-container'>
             <div className="row justify-content-between">
-                <div className="col-md-6">
+                <div className="col-md-8">
                     <div className="leftColm d-flex">
                         <div className="fotrAbout">
                             <h3>About BJS</h3>            
@@ -46,7 +46,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 p-0 rightColm text-end">
+                <div class="col-md-4 rightColm text-end">
                     <p><a href="mailto:hello@bjsfamily.com">hello@bjsfamily.com</a></p>
                     <a href="#"><button className="headOffice">BJS head office</button></a>
                     <h4>retire.grow.empire</h4>
@@ -55,6 +55,11 @@ const Footer = () => {
                 </div>
             </div>
     
+        </div>
+    </div>
+    <div className="reserved">
+        <div className='container'>
+            <p className='text-center m-0'>©BJS Distribution Limited, 2024 - All rights reserved.</p>
         </div>
     </div>
     </> 
