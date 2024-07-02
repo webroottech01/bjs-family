@@ -89,7 +89,7 @@ const Newspage = () => {
           {/* Remaining four news items */}
           <div className='col-md-6 listNews'>
             {newsData.slice(1, 5).map((news) => (
-              <div key={news.id} className='singleNews'>
+              <div key={news.id} className='singleNews d-flex'>
                 <img src={process.env.PUBLIC_URL + news.imageUrl} alt="" />
                 <div className='mainImgContent'>
                   <div className='row'>
