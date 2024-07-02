@@ -1,9 +1,56 @@
-$redcolor : red;
-
-.head {
-    font-size: 20px;
-    .ppp {
-        font-size: 50px;
-        color: $redcolor;
+.newsMain {
+    .container {
+        max-width: 1850px;
+        margin: 0 auto;
+    }
+    .imageSection {
+        .mainImg {
+            .mainImgContent {
+                border-radius: 10px;
+                background: #fff;
+                box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.08);
+                padding: 30px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+        h3 {
+            color: var(--bjs-dark-tone-copy, #877b6f);
+            font-family: "Gotham Bold";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22px; /* 137.5% */
+        }
+        .article {
+            p {
+                color: var(--BJS-Mid-Gray, #747e87);
+                font-family: "Gotham Medium";
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 12px; /* 100% */
+            }
+        }
+        .description {
+            color: var(--bjs-dark-tone-copy, #877b6f);
+            font-family: "Gotham Book";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px; /* 128.571% */
+            margin-bottom: 92px;
+        }
+        a {
+            color: var(--bjs-dark-tone-copy, #877b6f);
+            font-family: "Gotham Bold";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--BJS-Yellow, #feba30);
+        }
     }
 }

@@ -3,6 +3,7 @@ import './App.css';
 import './style.scss';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from './components/header/header';
+import Newspage from './pages/news/news-page/newspage'
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
       <Header /> 
       <BrowserRouter>
       <Routes>
+
+        <Route path="/newspage" element={<Newspage />} />  
+
         
       </Routes>
     </BrowserRouter>
