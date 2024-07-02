@@ -3,21 +3,27 @@ import "./header.scss";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { LinkContainer } from 'react-router-bootstrap'
 
 
 
 const Header = () => {
   return (
     <>
-      <div className='header'>
+      <div className='header sticky-top'>
         <div className='container'>
           <Navbar expand="lg" className="bg-body-tertiary">
 
-            <Navbar.Brand href="#home"><img src={process.env.PUBLIC_URL + "/FamilyLogo.png"} alt="" /></Navbar.Brand>
+          <Navbar.Brand>
+            <LinkContainer to="/">  
+              <img src={process.env.PUBLIC_URL + "/FamilyLogo.png"} alt="" /></LinkContainer></Navbar.Brand>
+              
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
               <Nav className="mainNavigation">
-                <Nav.Link href="#home">Our Services</Nav.Link>
+              <LinkContainer to="/about">
+                 <Nav.Link>Our Services</Nav.Link>
+              </LinkContainer>
                 <NavDropdown title="About BJS" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.2">
