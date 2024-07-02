@@ -4,10 +4,10 @@ import "./header.scss";
 const Header = () => {
   return (
     <>
-    <div className='head'>Header
-    <div className='ppp'>ppp div
-    
-    </div>
+    <div className='header'>
+       <div className='container'>
+              123
+                  </div>
     </div>
     </> 
   )
