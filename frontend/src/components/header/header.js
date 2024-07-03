@@ -4,12 +4,10 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-
-
 const Header = () => {
   return (
     <>
-      <div className='header'>
+<div className='header'>
         <div className='container'>
           <Navbar expand="lg" className="bg-body-tertiary">
 
@@ -49,6 +47,6 @@ const Header = () => {
         </div>
       </div>
     </>
-  )
+ )
 }
 export default Header;
