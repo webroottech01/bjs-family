@@ -5,7 +5,7 @@ const DifferentTechnology = ({ title, content, link, imageUrl1, imageUrl2, layou
   return (
     <div className="different-technology">
       {layout === 'layout1' && (
-        <div className=" row section-content">
+        <div className="row align-items-center section-content">
           <div className="col-md-6 left-column-sc">
             <div className="title-column">
               <h2>{title}</h2>
@@ -13,7 +13,7 @@ const DifferentTechnology = ({ title, content, link, imageUrl1, imageUrl2, layou
               <a href={link}>Learn More</a>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 right-column-sc">
             <div className="image-column">
               <img src={process.env.PUBLIC_URL + imageUrl1} alt="Image" />
             </div>
@@ -21,7 +21,7 @@ const DifferentTechnology = ({ title, content, link, imageUrl1, imageUrl2, layou
         </div>
       )}
       {layout === 'layout2' && (
-        <div className="row section-content">
+        <div className="row align-items-center section-content">
           <div className="col-md-6 left-column-sc">
             <div className="title-column">
               <h2>{title}</h2>
