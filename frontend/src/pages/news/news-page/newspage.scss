@@ -121,6 +121,59 @@
             }
         }
     }
-
-
+    .totalStories {
+        text-align: center;
+        margin: 30px 0;
+        a {
+            font-family: "Gotham Bold";
+            font-size: 21px;
+            text-decoration: none;
+            color: #877b6f;
+            padding: 20px 40px;
+            border: 1px solid #877b6f;
+            border-radius: 50px;
+            margin-top: 104px !important;
+        }
+        p {
+            margin: 0;
+        }
+        .progress-bar {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden;
+            color: var(--bs-progress-bar-color);
+            text-align: center;
+            white-space: nowrap;
+            background-color: var(--bs-progress-bar-bg);
+            transition: var(--bs-progress-bar-transition);
+            width: 258px;
+            height: 10px;
+            margin: 20px auto 49px;
+            border-radius: 50px;
+            background: lightgrey;
+            .fill {
+                height: 100%;
+                background-color: #5181cc;
+                transition: width 0.3s ease-in-out;
+                transition: width 0.3s ease-in-out;
+                border-radius: 50px;
+            }
+        }
+    }
+    .mediaSlider {
+        padding: 114px 0;
+        margin-top: 30px;
+        h2 {
+            color: #fff;
+            font-family: "Eveleth Dot";
+            font-size: 40px;
+            font-style: normal;
+            line-height: normal;
+        }
+    }
+   .partnersMAin {
+    background: #fff;
+   }
+    
 }

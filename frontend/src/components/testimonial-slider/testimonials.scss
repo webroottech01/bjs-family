@@ -1,0 +1,107 @@
+.newstestimonial {
+    padding: 40px 0 60px;
+    border-top: 1px solid var(--BJS-Light-Gray, #c5d1dc);
+    ul {
+        text-align: left;
+        height: fit-content;
+        .slick-active {
+            background: #feba30 !important;
+        }
+        li {
+            background: #c5d1dc;
+            border-radius: 50px !important;
+            overflow: hidden;
+            width: 42px !important;
+            height: 3px !important;
+        }
+    }
+    h2 {
+        color: #24292c;
+        font-size: 22px;
+        font-style: normal;
+        line-height: normal;
+        font-family: "Eveleth Dot";
+        margin: 10.5px 0 15px;
+    }
+    .testimonialMain {
+        display: flex !important;
+        justify-content: space-between;
+        padding-top: 40px;
+        h3 {
+            color: var(--bjs-dark-tone-copy, #877b6f);
+            font-family: "Gotham Medium";
+            font-size: 17px;
+            font-style: italic;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 15px;
+        }
+        .testimonialContent {
+            img {
+                width: 113px !important;
+                margin-bottom: 25px;
+            }
+            .testimonialDescription {
+                color: var(--bjs-dark-tone-copy, #877b6f);
+                font-family: "Gotham Book";
+                font-size: 15px;
+                font-style: italic;
+                font-weight: 400;
+                line-height: 22px;
+                margin-bottom: 25px;
+            }
+            .testimonialAuthor {
+                color: var(--BJS-Mid-Gray, #747e87);
+                font-family: "Gotham Book";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin: 0 0 40px 0;
+            }
+        }
+        .trustpilot {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            img {
+                width: 163px !important;
+                margin-bottom: 10px;
+            }
+            .trustRating {
+                img {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+    .slick-next {
+        right: 0;
+        top: -36px;
+        &:before {
+            content: ">" !important;
+            background: #fff;
+            padding: 0px 9px 5px;
+            border: 1px solid var(--BJS-Light-Gray, #C5D1DC);
+            border-radius: 50px;
+            font-size: 24px;
+            color: #000;
+            font-weight: 700;
+        }
+    }
+    .slick-prev {
+        top: -37px;
+        position: absolute !important;
+        left: 96%;
+        &:before {
+            content: "<" !important;
+            background: #fff;
+            padding: 0px 9px 5px;
+            border: 1px solid var(--BJS-Light-Gray, #C5D1DC);
+            border-radius: 50px;
+            font-size: 24px;
+            color: #000;
+            font-weight: 700;
+        }
+    }
+}
