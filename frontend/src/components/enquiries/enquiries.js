@@ -8,8 +8,8 @@ const Enquiries = () => {
     <>
     <div className='enquiry'>
       <div className='container'>
-        <div className='row'>
-          <div className='col-lg-6'>
+        <div className='row justify-content-between'>
+          <div className='col-lg-6 sec-leftone'>
             <h2>Enquiries</h2>
             <h3>01922 645 650</h3>
             <p>7 Days: 8am - 6pm</p>

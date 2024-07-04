@@ -63,7 +63,7 @@
         }
 
         .bjsServices {
-            background: #877b6f !important;
+            background: #000 !important;
             text-transform: uppercase;
             border: 0px;
 
@@ -77,7 +77,7 @@
         }
 
         a {
-            font-family: "Gotham Book";
+            font-family: "Gotham Bold";
             font-size: 16px;
             font-weight: 400;
             line-height: 51px;
@@ -128,7 +128,7 @@
         padding: 16px 30px;
         border-radius: 66px;
         opacity: 0px;
-        color: #877b6f;
+        color: #000;
         font-family: "Gotham Bold";
         text-transform: uppercase;
         border: 0px;
@@ -155,7 +155,7 @@
         line-height: 19.38px;
         text-align: left;
         text-transform: uppercase;
-        color: #877b6f;
+        color: #000;
         font-weight: normal;
     }
 
@@ -179,6 +179,17 @@
         .section-content {
             margin: 0;
             background: linear-gradient(289deg, #70c6f0 0%, #73c8ef 100%);
+            .left-column-sc {
+                h2 {
+                    color: #000;
+                }
+                p {
+                    color: #000;
+                }
+                a {
+                    color: #73c8ef;
+                }
+            }
         }
         .left-column-sc {
             background: linear-gradient(289deg, #70c6f0 0%, #73c8ef 100%);
@@ -236,7 +247,7 @@
         }
     }
     h2 {
-        color: var(--bjs-dark-tone-copy, #877b6f);
+        color: #000;
         font-family: "Brixton_Wood_PERSONAL_USE_ONLY Vector";
         font-size: 60px;
         font-style: normal;
@@ -246,7 +257,7 @@
         margin-bottom: 20px !important;
     }
     p {
-        color: var(--bjs-dark-tone-copy, #877b6f);
+        color: #000;
         font-family: "Gotham Book";
         font-size: 16px;
         font-style: normal;
@@ -276,7 +287,7 @@
                 width: 140px;
             }
             h3 {
-                color: var(--bjs-dark-tone-copy, #877b6f);
+                color: #000;
                 font-family: "Gotham Bold";
                 font-size: 16px;
                 font-style: normal;
@@ -343,8 +354,11 @@
     }
     .heartFeltCustomer {
         padding: 60px;
-        background: linear-gradient(289deg, #E4E4E4 0%, #F6F6F6 100%);
+        background: linear-gradient(289deg, #e4e4e4 0%, #f6f6f6 100%);
         .testimonialslider {
+            h3 {
+                color: #000;
+            }
             .slick-prev {
                 left: 90%;
             }
@@ -353,10 +367,10 @@
                 flex-direction: column;
                 align-items: start;
                 p {
-                    margin: 0 ;
+                    margin: 0;
                 }
             }
-             .testimonialAuthor {
+            .testimonialAuthor {
                 margin: 0 0 196px 0;
             }
             .slick-dots {
@@ -364,7 +378,7 @@
                 top: 229px;
             }
         }
-        
+
         h2 {
             color: #24292c;
             font-size: 22px;
@@ -373,7 +387,7 @@
             font-family: "Eveleth Dot";
             padding: 10.5px 0 15px;
             margin: 0;
-            border-bottom: 1px solid var(--BJS-Light-Gray, #C5D1DC);
+            border-bottom: 1px solid var(--BJS-Light-Gray, #c5d1dc);
         }
     }
 }
