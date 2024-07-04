@@ -4,6 +4,10 @@
         height: fit-content;
         .slick-active {
             background: #feba30 !important;
+            button {
+                height:100%;
+                width: 100%;
+            }
         }
         li {
             background: #c5d1dc;

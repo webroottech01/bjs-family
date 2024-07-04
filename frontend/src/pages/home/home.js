@@ -2,6 +2,9 @@ import React from 'react'
 import "./home.scss";
 import Withbigbulky from '../../components/with big & bulky/withbigbulky';
 import DifferentTechnology from '../../components/differenttechnology/differenttechnology';
+import Partners from '../../components/partners-slider/partners';
+import Enquiries from '../../components/enquiries/enquiries';
+import Testimonials from '../../components/testimonial-slider/testimonials';
 
 const Home = () => {
     return (
@@ -13,18 +16,18 @@ const Home = () => {
                     <div className='maintextouter'>
                         <h1>california dreamin’</h1>
                         <h5>no more</h5></div>
-                
-                <div className="col-12 bannerButtons">
-                    <div className="container">
 
-                        <div className='row justify-content-between'>
+                    <div className="col-12 bannerButtons">
+                        <div className="container">
 
-                            <div className='col-6'><button><a href="">Learn more about our values</a></button></div>
-                            <div className='col-6'><button className='bjsServices'><a href=""><span>BJS</span> Services</a></button></div>
+                            <div className='row justify-content-between'>
+
+                                <div className='col-6'><button><a href="">Learn more about our values</a></button></div>
+                                <div className='col-6'><button className='bjsServices'><a href=""><span>BJS</span> Services</a></button></div>
+                            </div>
+
                         </div>
-
                     </div>
-                </div>
 
                 </div>
             </div>
@@ -69,14 +72,86 @@ const Home = () => {
                 </div>
             </div>
 
-<Withbigbulky/>
-<DifferentTechnology
-        layout="layout1"
-        title="what makes bjs different"
-        content="We provide the very best customer service at every stage of the delivery process, putting customers at the heart of everything we do – so that your products, reputation, customers and peace of mind really are safe in our hands."
-        link="#"
-        imageUrl1="/images/Clip path group_11zon.jpg"
-      />
+            <Withbigbulky />
+
+            <div className='beliefDevine'>
+                <div className="container mb-5">
+                    <div className="row">
+                        <div className='col-7 leftContent'>
+                            <h2>belief in a divine flow and the team</h2>
+                            <p>From the very inception of BJS, spiritual guidance was sought from Baba Jaswant Singh Ji – whom the company is named after. Before his death in 2020, Baba Jaswant Singh Ji was based in Punjab and had a trust that ran projects for the welfare of humanity; providing health care facilities, higher medical education and to show ‘the path of spiritual righteousness’, to ‘foster human values and welfare with esteemed devotion indeed’.
+                            </p>
+                            <p>Harinder, BJS Managing Director, explains that he believes in a divine flow and his team;</p>
+
+                            <img src={process.env.PUBLIC_URL + "/images/comas.png"} alt="" className='comaImg' />
+                            <div className='col-12 twoparts'>
+                                <div className='row'>
+                                    <div className='col-8 p-0'>
+                                        <p>Who we are as people, our values and emotional needs, shouldn’t be ignored within the world of work. There is no division in our hearts before you start work and after you sit at your desk or the cab of a truck. By respecting my team and treating them with compassion and kindness they are better able to continue that conduct to the benefit of everyone they encounter, including our customers. It is what has set us apart as a business. </p>
+                                    </div>
+                                    <div className='col-4 p-0'>
+                                        <div className='d-flex authorDetailing align-items-center gap-4'>
+                                            <img src={process.env.PUBLIC_URL + "/images/managerImage.png"} alt="" className='comaImg' />
+                                            <div className='w-100'>
+                                                <h3>Harinder Singh</h3>
+                                                <p>Managing Director</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-12 moreinfo'><button>OUR STORY</button></div>
+                        </div>
+                        <div className='col-5'><img src={process.env.PUBLIC_URL + "/images/devineimg.jpg"} alt="" width="100%" /></div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div className='bjsDifferentSec'>
+                <DifferentTechnology
+                    layout="layout1"
+                    title="what makes bjs different"
+                    content="We provide the very best customer service at every stage of the delivery process, putting customers at the heart of everything we do – so that your products, reputation, customers and peace of mind really are safe in our hands."
+                    link="#"
+                    imageUrl1="/images/Clip path group_11zon.jpg"
+                />
+            </div>
+
+
+
+            {/* Partners Carousel */}
+            <div className='partnersMAin'>
+                <div className='newsPartners'>
+                    <h2 className='text-center'>Our Partners</h2>
+                    <Partners />
+                </div>
+            </div>
+
+            <div className='heartFelt'>
+                <div className='row'>
+                    <div className='col-6 heartFeltCustomer'>
+                    <h2 className='text-start'>what our customers think</h2>
+
+                        <Testimonials />
+
+                    </div>
+                    <div className='col-6 heartFeltContent'>
+                        <h2>Heart Felt</h2>
+                        <p>BJS is a corporate built on compassionate values; named after Baba Jaswant Singh Ji - who remains the spiritual inspiration and guidance behind the brand after his death in 2020 – BJS has an authentic desire to make a lasting and positive impact on the world. </p>
+                        <button>Our Values</button>
+                    
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div className='enquiries'>
+                <Enquiries />
+            </div>
 
 
 
