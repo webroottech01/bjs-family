@@ -1,5 +1,4 @@
-$redcolor : red;
-
+$redcolor: red;
 
 .header {
     height: 80px;
@@ -18,57 +17,79 @@ $redcolor : red;
         }
 
         .navbarsecond a#basic-nav-dropdown {
-            font-family: 'Gotham';
+            font-family: "Gotham";
             font-size: 12px;
             font-weight: bold;
             text-transform: uppercase;
         }
-   
 
-    .mainNavigation a.nav-link {
-        font-family: Gotham Bold;
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 14.36px;
-        text-align: left;
-        color: #877B6F;
-        padding: 15px 12px;
-        font-family: 'Gotham';
-    }
+        .mainNavigation a.nav-link {
+            font-family: Gotham Bold;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 14.36px;
+            text-align: left;
+            color: #877b6f;
+            padding: 15px 12px;
+            font-family: "Gotham";
+        }
 
-    .flags {
-        background: url(../../../public/images/US-Flag.png) no-repeat scroll left center;
-        padding: 0 0 0 18px;
-    }
+        .flags {
+            background: url(../../../public/images/US-Flag.png) no-repeat scroll left center;
+            padding: 0 0 0 18px;
+        }
 
-    button.talktous {
-        width: 148px;
-        height: 42px;
-        padding: 0 0 0 18px;
-        gap: 6px;
-        border-radius: 66px;
-        opacity: 0px;
-        text-transform: uppercase;
-        color: #fff;
-        border: 0px;
-        font-weight: bold;
-        background: #747E87 url(../../../public/images/phone.png) no-repeat scroll left 14px top 11px;
-    }
+        button.talktous {
+            width: 148px;
+            height: 42px;
+            padding: 0 0 0 18px;
+            gap: 6px;
+            border-radius: 66px;
+            opacity: 0px;
+            text-transform: uppercase;
+            color: #fff;
+            border: 0px;
+            font-weight: bold;
+            background: #747e87 url(../../../public/images/phone.png) no-repeat scroll left 14px top 11px;
+        }
 
-    .navbarsecond {
-        align-items: center;
-        gap: 15px;
+        .navbarsecond {
+            align-items: center;
+            gap: 15px;
+        }
     }
-}
 }
 
 .enquiry {
+    .row {
+        max-width: 1182px;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
     h2 {
-        font-family: 'Eveleth Dot';
+        font-family: "Eveleth Dot";
         font-size: 16px;
         font-weight: 950;
         line-height: 22.14px;
         text-align: center;
-        color: #FEBA30;
+        color: #feba30;
+    }
+    h3 {
+        color: var(--bjs-dark-tone-copy, #877b6f);
+        font-family: "Gotham Light";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+    p {
+        color: var(--BJS-Mid-Gray, #747e87);
+        font-family: "Gotham Book";
+        font-size: 13px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0 0 20px;
     }
 }

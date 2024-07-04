@@ -4,13 +4,12 @@
     background-size: cover;
     background-attachment: fixed;
 
-
     .container {
         max-width: 1180px;
-        padding-top: 32px;
+        padding-top: 37px;
 
         p {
-            font-family: 'Gotham book';
+            font-family: "Gotham book";
             font-size: 20px;
             font-weight: 400;
             line-height: 26px;
@@ -25,7 +24,7 @@
             font-weight: 700;
             text-align: center;
             text-transform: uppercase;
-            color: #FAA00E;
+            color: #faa00e;
             margin-top: 10px;
             line-height: 80px;
         }
@@ -38,19 +37,17 @@
             font-size: 104px;
             font-family: "Brixton_Wood_PERSONAL_USE_ONLY Vector";
             transform: rotate(-7deg);
-            color: #73C8EF;
+            color: #73c8ef;
         }
 
         .maintextouter {
             position: relative;
         }
-
-
     }
 
     .bannerButtons {
         margin-top: 19%;
-        padding-bottom: 35px;
+        padding-bottom: 37px;
 
         .container {
             max-width: 567px;
@@ -66,12 +63,12 @@
         }
 
         .bjsServices {
-            background: #877B6F !important;
+            background: #877b6f !important;
             text-transform: uppercase;
             border: 0px;
 
             span {
-                color: #FEBA30;
+                color: #feba30;
             }
 
             a {
@@ -86,12 +83,11 @@
             line-height: 51px;
             text-align: left;
             text-decoration: none;
-            color: #FFFFFF;
+            color: #ffffff;
             background: transparent;
         }
     }
 }
-
 
 .homeDeliverSection {
     .container {
@@ -104,23 +100,23 @@
     text-align: left;
 
     h2 {
-        font-family: 'Brixton_Wood_PERSONAL_USE_ONLY Vector';
+        font-family: "Brixton_Wood_PERSONAL_USE_ONLY Vector";
         font-size: 100px;
         font-weight: 700;
         line-height: 95.5px;
         text-align: left;
         text-transform: uppercase;
-        color: #73C8EF;
+        color: #73c8ef;
     }
 
     span {
-        color: #FBC22B;
+        color: #fbc22b;
     }
 
     p {
         width: 600px;
         margin-top: 10px;
-        color: #877B6F;
+        color: #877b6f;
         text-align: justify;
     }
 
@@ -132,11 +128,11 @@
         padding: 16px 30px;
         border-radius: 66px;
         opacity: 0px;
-        color: #877B6F;
-        font-family: 'Gotham Bold';
+        color: #877b6f;
+        font-family: "Gotham Bold";
         text-transform: uppercase;
         border: 0px;
-        background: #FEBA30;
+        background: #feba30;
     }
 
     .muchmore {
@@ -145,22 +141,21 @@
         font-weight: 400;
         line-height: 13.4px;
         text-align: left;
-        color: #877B6F;
+        color: #877b6f;
     }
-
 }
 
 .twoparts {
     margin-top: 25px;
 
     b {
-        font-family: 'Eveleth Dot';
+        font-family: "Eveleth Dot";
         font-size: 14px;
         font-weight: 950;
         line-height: 19.38px;
         text-align: left;
         text-transform: uppercase;
-        color: #877B6F;
+        color: #877b6f;
         font-weight: normal;
     }
 
@@ -170,12 +165,215 @@
     }
 
     li::marker {
-        color: #FBC22B;
+        color: #fbc22b;
         font-size: 19px;
     }
 
     li {
-        color: #877B6F;
+        color: #877b6f;
     }
 }
 
+.bjsDifferentSec {
+    .different-technology {
+        .section-content {
+            margin: 0;
+            background: linear-gradient(289deg, #70c6f0 0%, #73c8ef 100%);
+        }
+        .left-column-sc {
+            background: linear-gradient(289deg, #70c6f0 0%, #73c8ef 100%);
+        }
+    }
+}
+
+.newsPartners {
+    max-width: 1044px;
+    margin: 0 auto;
+    padding: 60px 0;
+
+    h2 {
+        color: #919495;
+        font-family: "Eveleth Dot";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 950;
+        line-height: normal;
+        position: relative;
+        margin: 0 auto 40px;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 733px;
+            background: #d1d6d8;
+            height: 1px;
+            left: -19rem;
+            top: 12px;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            width: 733px;
+            background: #d1d6d8;
+            height: 1px;
+            right: -19rem;
+            top: 12px;
+        }
+    }
+}
+
+.beliefDevine {
+    padding: 100px 0;
+    .container {
+        max-width: 1800px !important;
+        width: 100%;
+    }
+    .leftContent {
+        margin-top: 0;
+        button {
+            border-radius: 66px;
+            background: var(--BJS-Mid-Gray, #747e87);
+            color: #fff;
+        }
+    }
+    h2 {
+        color: var(--bjs-dark-tone-copy, #877b6f);
+        font-family: "Brixton_Wood_PERSONAL_USE_ONLY Vector";
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 100%;
+        margin-bottom: 20px !important;
+    }
+    p {
+        color: var(--bjs-dark-tone-copy, #877b6f);
+        font-family: "Gotham Book";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px; /* 137.5% */
+        width: 94%;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    .comaImg {
+        margin-top: 40px;
+    }
+    .twoparts {
+        p {
+            color: var(--BJS-Mid-Gray, #747e87);
+            font-family: "Gotham Book";
+            font-size: 15px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 20px; /* 133.333% */
+            text-align: left;
+            width: 93%;
+        }
+        .authorDetailing {
+            img {
+                margin: 0;
+                width: 140px;
+            }
+            h3 {
+                color: var(--bjs-dark-tone-copy, #877b6f);
+                font-family: "Gotham Bold";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            p {
+                color: var(--BJS-Mid-Gray, #747e87);
+                font-family: "Gotham Book";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+.heartFelt {
+    .row {
+        width: 100%;
+    }
+    .heartFeltContent {
+        padding: 60px 60px 100px;
+        background-image: url("/../public/images/heartfeltBg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        h2 {
+            color: #fff;
+            text-align: center;
+            font-family: "Brixton_Wood_PERSONAL_USE_ONLY Vector";
+            font-size: 200px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            transform: rotate(-4.992deg);
+        }
+        p {
+            color: #fff;
+            text-align: center;
+            text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+            font-family: "Gotham Book";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            margin: 40px auto 0;
+            width: 84%;
+        }
+        button {
+            color: var(--BJS-Yellow, #feba30);
+            font-family: "Eveleth Dot";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 950;
+            line-height: normal;
+            border-radius: 66px;
+            background: #fff;
+            padding: 20px 40px;
+            border: none;
+            margin-top: 60px;
+        }
+    }
+    .heartFeltCustomer {
+        padding: 60px;
+        background: linear-gradient(289deg, #E4E4E4 0%, #F6F6F6 100%);
+        .testimonialslider {
+            .slick-prev {
+                left: 90%;
+            }
+            .trustpilot {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                p {
+                    margin: 0 ;
+                }
+            }
+             .testimonialAuthor {
+                margin: 0 0 196px 0;
+            }
+            .slick-dots {
+                position: absolute;
+                top: 229px;
+            }
+        }
+        
+        h2 {
+            color: #24292c;
+            font-size: 22px;
+            font-style: normal;
+            line-height: normal;
+            font-family: "Eveleth Dot";
+            padding: 10.5px 0 15px;
+            margin: 0;
+            border-bottom: 1px solid var(--BJS-Light-Gray, #C5D1DC);
+        }
+    }
+}

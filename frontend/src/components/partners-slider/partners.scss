@@ -3,8 +3,8 @@
     margin: 0 auto;
     padding: 60px 0;
     .slick-next {
-        right: -19rem;
-        top: 22px !important;
+        right: -17rem;
+        top: 2px !important;
         &:before {
             content: "" !important;
             background-image: url("/../public/images/partnerNext.png");
@@ -17,7 +17,7 @@
     }
     .slick-prev {
         left: -19rem;
-        top: 22px;
+        top: 2px !important;
         &:before {
             content: "" !important;
             background-image: url("/../public/images/partnerPrev.png");
@@ -44,7 +44,7 @@
         width: 168px;
         margin: 0 auto;
     }
-    
+
     .slick-track {
         display: flex;
         align-items: center;
