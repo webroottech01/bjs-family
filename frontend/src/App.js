@@ -3,6 +3,7 @@ import './App.css';
 import './style.scss';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from './components/header/header';
+import Servicepage from './pages/service-page/servicepage';
 import Newspage from './pages/news/news-page/newspage'
 import Home from './pages/home/home';
 import Technology from './pages/about/technology/technology';
@@ -20,20 +21,17 @@ function App() {
       <Routes>
 
 
-        <Route path="/newspage" element={<Newspage />} />  
-
-        
-    
-
-<Route path="/" element={<Home />} />
-<Route path="/technology" element={<Technology />} />
+        <Route path="/newspage" element={<Newspage />} /> 
+        <Route path="/servicepage" element={<Servicepage />} /> 
+        <Route path="/" element={<Home />} />
+        <Route path="/technology" element={<Technology />} />
         <Route path="/about" element={<About />} />
-</Routes>
+      </Routes>
 
       
-    </BrowserRouter> 
-<Footer />
-</div>
+       </BrowserRouter> 
+    <Footer />
+    </div>
   );
 }
 
