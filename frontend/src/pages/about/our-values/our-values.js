@@ -1,11 +1,11 @@
 import React from 'react';
-import "./about.scss";
+import "./our-values.scss";
 import MdMessage from '../../../components/md-message/md-message';
 import DifferentTechnology from '../../../components/differenttechnology/differenttechnology';
 
-const About = () => {
+const Ourvalues = () => {
   return (
-  <div className="about-us">
+  <div className="our-values">
     <div className='namedAfter'>
       <div className="container p-0">
         <h2 className='pageTittle'>OUR VALUES</h2>
@@ -60,4 +60,4 @@ const About = () => {
   </div>
   )
 }
-export default About;
+export default Ourvalues; 

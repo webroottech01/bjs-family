@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import './style.scss';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -7,30 +6,28 @@ import Servicepage from './pages/service-page/servicepage';
 import Newspage from './pages/news/news-page/newspage'
 import Home from './pages/home/home';
 import Technology from './pages/about/technology/technology';
-import About from './pages/about/about/about';
-import Footer from './components/footer/footer';
+import Ourvalues from './pages/about/our-values/our-values';
+import Footer from './components/footer/footer'; 
 
 
 
-function App() {
+function App() { 
   return (
     <div className="App">
-      
+
       <BrowserRouter basename='/'>
-      <Header /> 
-      <Routes>
+        <Header />
+        <Routes>
+          <Route path="/news" element={<Newspage />} />
+          <Route path="/services" element={<Servicepage />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/technology" element={<Technology />} />
+          <Route path="/our-values" element={<Ourvalues />} /> 
+        </Routes>
 
+        <Footer />
+      </BrowserRouter> 
 
-        <Route path="/newspage" element={<Newspage />} /> 
-        <Route path="/servicepage" element={<Servicepage />} /> 
-        <Route path="/" element={<Home />} />
-        <Route path="/technology" element={<Technology />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-
-      
-       </BrowserRouter> 
-    <Footer />
     </div>
   );
 }
