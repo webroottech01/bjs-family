@@ -7,7 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 const Header = () => {
   return (
     <>
-<div className='header'>
+<div className='header'> 
         <div className='container'>
           <Navbar expand="lg" className="bg-body-tertiary">
 

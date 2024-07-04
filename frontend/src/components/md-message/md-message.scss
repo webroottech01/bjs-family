@@ -1,4 +1,6 @@
 .md-message {
+    padding: 62px 0;
+
     .container-md {
         max-width: 1600px;
         margin: 0 auto;
@@ -36,5 +38,48 @@
         display: flex;
         justify-content: end;
         align-items: center;
+        padding: 0;
+        width: 24%;
+
+        h5 b {
+            color: var(--bjs-dark-tone-copy, #877B6F);
+            font-family: "Gotham Bold";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        h5 {
+            color: var(--BJS-Mid-Gray, #747E87);
+            font-family: "Gotham Book";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .md-profile {
+            text-align: left;
+            padding-left: 22px;
+        }
+    }
+
+    .md-quote {
+        text-align: left;
+        padding-right: 25px;
+
+        img {
+            margin-bottom: 31px;
+        }
+    }
+
+    .md-xm-mid {
+        padding: 18px 0px 0 42px;
+        width: 51%;
+
+        p {
+            text-align: left;
+        }
     }
 }
