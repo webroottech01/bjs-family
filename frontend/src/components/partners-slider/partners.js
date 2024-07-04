@@ -18,6 +18,7 @@ const Partners = () => {
 
   return (
     <>
+    <div className="partnerslider">
       <Slider {...settings}>
         <div className='partnersLogo'>
         <img src='./images/richersounds.png' alt="" className='partnerMainlogo' />
@@ -47,6 +48,7 @@ const Partners = () => {
         <img src='./images/tikamoon.png' alt="" className='partnerMainlogo' />
         </div>
       </Slider>
+      </div>
     </>
   )
 }

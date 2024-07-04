@@ -2,6 +2,7 @@ import React from 'react';
 import './newspage.scss';
 import Testimonials from '../../../components/testimonial-slider/testimonials';
 import Partners from '../../../components/partners-slider/partners';
+import Media from '../../../components/media-slider/media';
 
 const newsData = [
   {
@@ -120,6 +121,11 @@ const Newspage = () => {
 
       <div className='mediaSlider'>
         <h2 className='text-center'>MENTIONED IN THE MEDIA</h2>
+        <div className='sliderMediaMain'>
+            <Media />
+
+        </div>
+
       </div>
 
       {/* TESTImonial Carousel */}

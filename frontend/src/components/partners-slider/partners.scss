@@ -1,4 +1,4 @@
-.newsPartners {
+.partnerslider {
     max-width: 1044px;
     margin: 0 auto;
     padding: 60px 0;
@@ -6,28 +6,26 @@
         right: -19rem;
         top: 22px !important;
         &:before {
-            content: ">" !important;
-            background: #fff;
-            padding: 0px 9px 5px;
-            border: 1px solid var(--BJS-Light-Gray, #C5D1DC);
-            border-radius: 50px;
-            font-size: 24px;
-            color: #000;
-            font-weight: 700;
+            content: "" !important;
+            background-image: url("/../public/images/partnerNext.png");
+            width: 60px;
+            height: 60px;
+            display: block;
+            background-size: contain;
+            background-repeat: no-repeat;
         }
     }
     .slick-prev {
         left: -19rem;
         top: 22px;
         &:before {
-            content: "<" !important;
-            background: #fff;
-            padding: 0px 9px 5px;
-            border: 1px solid var(--BJS-Light-Gray, #C5D1DC);
-            border-radius: 50px;
-            font-size: 24px;
-            color: #000;
-            font-weight: 700;
+            content: "" !important;
+            background-image: url("/../public/images/partnerPrev.png");
+            width: 60px;
+            height: 60px;
+            display: block;
+            background-size: contain;
+            background-repeat: no-repeat;
         }
     }
     ul {
@@ -40,34 +38,6 @@
             overflow: hidden;
             width: 42px !important;
             height: 3px !important;
-        }
-    }
-    h2 {
-        color: #919495;
-        font-family: 'Eveleth Dot';
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 950;
-        line-height: normal;
-        position:relative;
-        margin: 0 auto 40px;
-        &:before {
-            content: "";
-            position: absolute;
-            width: 733px;
-            background:  #D1D6D8;
-            height: 1px;
-            left: -19rem;
-            top: 12px;
-        }
-        &:after {
-            content: "";
-            position: absolute;
-            width: 733px;
-            background:  #D1D6D8;
-            height: 1px;
-            right: -19rem;
-            top: 12px;
         }
     }
     .partnerMainlogo {

@@ -1,6 +1,4 @@
-.newstestimonial {
-    padding: 40px 0 60px;
-    border-top: 1px solid var(--BJS-Light-Gray, #c5d1dc);
+.testimonialslider {
     ul {
         text-align: left;
         height: fit-content;
@@ -15,17 +13,7 @@
             height: 3px !important;
         }
     }
-    h2 {
-        color: #24292c;
-        font-size: 22px;
-        font-style: normal;
-        line-height: normal;
-        font-family: "Eveleth Dot";
-        margin: 10.5px 0 15px;
-    }
     .testimonialMain {
-        display: flex !important;
-        justify-content: space-between;
         padding-top: 40px;
         h3 {
             color: var(--bjs-dark-tone-copy, #877b6f);
@@ -77,31 +65,29 @@
     }
     .slick-next {
         right: 0;
-        top: -36px;
+        top: -43px;
         &:before {
-            content: ">" !important;
-            background: #fff;
-            padding: 0px 9px 5px;
-            border: 1px solid var(--BJS-Light-Gray, #C5D1DC);
-            border-radius: 50px;
-            font-size: 24px;
-            color: #000;
-            font-weight: 700;
+            content: "" !important;
+            background-image: url("/../public/images/testimonialArrownext.png");
+            width: 22px;
+            height: 44px;
+            display: block;
+            background-size: contain;
+            background-repeat: no-repeat;
         }
     }
     .slick-prev {
-        top: -37px;
+        top: -43px;
         position: absolute !important;
         left: 96%;
         &:before {
-            content: "<" !important;
-            background: #fff;
-            padding: 0px 9px 5px;
-            border: 1px solid var(--BJS-Light-Gray, #C5D1DC);
-            border-radius: 50px;
-            font-size: 24px;
-            color: #000;
-            font-weight: 700;
+            content: "" !important;
+            background-image: url("/../public/images/testimonialArrowprev.png");
+            width: 22px;
+            height: 44px;
+            display: block;
+            background-size: contain;
+            background-repeat: no-repeat;
         }
     }
 }
