@@ -1,15 +1,16 @@
 .bannerSection {
     background: url(../../../public/images/banner.jpg);
-    padding: 37px 0;
     background-repeat: no-repeat;
-    width: 100%;
-    background-size: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+
 
     .container {
         max-width: 1180px;
+        padding-top: 32px;
 
         p {
-            font-family: 'Gotham';
+            font-family: 'Gotham book';
             font-size: 20px;
             font-weight: 400;
             line-height: 26px;
@@ -49,6 +50,7 @@
 
     .bannerButtons {
         margin-top: 19%;
+        padding-bottom: 35px;
 
         .container {
             max-width: 567px;
@@ -91,15 +93,16 @@
 }
 
 
-.homeDeliverSection{
-.container {
-    max-width: 1720px;
+.homeDeliverSection {
+    .container {
+        max-width: 1720px;
+    }
 }
- }
 
 .leftContent {
-    margin-top: 149px;
+    margin-top: 80px;
     text-align: left;
+
     h2 {
         font-family: 'Brixton_Wood_PERSONAL_USE_ONLY Vector';
         font-size: 100px;
@@ -109,34 +112,70 @@
         text-transform: uppercase;
         color: #73C8EF;
     }
+
     span {
         color: #FBC22B;
     }
+
     p {
         width: 600px;
         margin-top: 10px;
         color: #877B6F;
         text-align: justify;
     }
-    
+
+    .moreinfo {
+        margin-top: 40px;
+    }
+
+    button {
+        padding: 16px 30px;
+        border-radius: 66px;
+        opacity: 0px;
+        color: #877B6F;
+        font-family: 'Gotham Bold';
+        text-transform: uppercase;
+        border: 0px;
+        background: #FEBA30;
+    }
+
+    .muchmore {
+        font-family: Gotham Book;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 13.4px;
+        text-align: left;
+        color: #877B6F;
+    }
+
 }
+
 .twoparts {
     margin-top: 25px;
-b {
-    font-family: 'Eveleth Dot';
-    font-size: 14px;
-    font-weight: 950;
-    line-height: 19.38px;
-    text-align: left;
-    text-transform: uppercase;
-    color: #877B6F;
-    font-weight: normal;
+
+    b {
+        font-family: 'Eveleth Dot';
+        font-size: 14px;
+        font-weight: 950;
+        line-height: 19.38px;
+        text-align: left;
+        text-transform: uppercase;
+        color: #877B6F;
+        font-weight: normal;
+    }
+
+    ul {
+        padding: 0px 0 0 22px;
+        margin-bottom: 25px;
+    }
+
+    li::marker {
+        color: #FBC22B;
+        font-size: 19px;
+    }
+
+    li {
+        color: #877B6F;
+    }
 }
-ul {
-    padding: 0px 0 0 22px;
-}
-li::marker {
-    color: #FBC22B;
-    font-size: 19px;
-}
-}
+
