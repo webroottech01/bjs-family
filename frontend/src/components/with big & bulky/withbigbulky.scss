@@ -1,0 +1,23 @@
+.littleThingSection {
+    background: #FAD0D2;
+
+    .container {
+        max-width: 1020.58px;
+        padding: 70px 0 310px 0;
+        position: relative;
+    }
+
+    h2 {
+        font-size: 140px;
+        text-transform: uppercase;
+        font-family: "Brixton_Wood_PERSONAL_USE_ONLY Vector";
+        text-align: left;
+        line-height: 98px;
+        transform: rotate(-6deg);
+    }
+    .towmen {
+        position: absolute;
+        bottom: 68px;
+        left: 30px;
+    }
+}
