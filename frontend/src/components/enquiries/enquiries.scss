@@ -61,6 +61,13 @@ $redcolor: red;
 }
 
 .enquiry {
+    margin: 0 0 20px;
+    .sec-leftone {
+        border-right: 1px solid var(--BJS-Light-Gray, #C5D1DC) ;
+    }
+    .col-lg-6 {
+        width:49%;
+    }
     .row {
         max-width: 1182px;
         margin: 0 auto;
@@ -90,6 +97,6 @@ $redcolor: red;
         font-style: italic;
         font-weight: 400;
         line-height: normal;
-        margin: 0 0 20px;
+        margin: 0;
     }
 }
