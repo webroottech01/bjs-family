@@ -1,4 +1,5 @@
 import React from 'react';
+import Enquiries from '../../components/enquiries/enquiries';
 import "./servicepage.scss";
 
 
@@ -16,11 +17,11 @@ const Servicepage = () => {
       <div className='service-banner'>
         <div className='container'>
           <div className='row justify-content-between'>
-            <div className='col-md-7'>
+            <div className='col-md-8 left-sec'>
               <h2>High <span>Cali</span>ber Services</h2>
               <h3>industry-leading home delivery</h3>
-              <p>We provide the very best home delivery in the US, offering a wide range of flexible services carried out by our friendly and well-trained teams of specialists.</p>
-              <div className='row'>
+              <p className='first-child'>We provide the very best home delivery in the US, offering a wide range of flexible services carried out by our friendly and well-trained teams of specialists.</p>
+              <div className='row feature'>
                 <div className='col-md-2'>
                   <img src={process.env.PUBLIC_URL + "/images/24-hours.svg"} alt="" />
                   <h4>Next day delivery</h4>
@@ -42,7 +43,7 @@ const Servicepage = () => {
                 </div>
               </div>
             </div>
-            <div className='col-md-4 img-sec'>
+            <div className='col-md-4 right-sec'>
               <img src={process.env.PUBLIC_URL + "/images/Handy-men.png"} alt="service" />  
             </div>
           </div>
@@ -53,7 +54,7 @@ const Servicepage = () => {
       <div className='about-srvc'>
         <div className='container'>
             <div className='row'>
-              <div className='col-lg-3'>
+              <div className='col-lg-3 p-0'>
                 <h2>Your customers can expect</h2>
                 <ul>
                   <li>Call to arrange a suitable delivery time</li>
@@ -74,48 +75,48 @@ const Servicepage = () => {
                 </ul>
               </div>
 
-              <div className='col-lg-6'>
+              <div className='col-lg-6 bolt-on'>
                 <h2>Bolt-on options</h2>
                 <p>Above and beyond our standard ‘delivery to the door’ service at a convenient time, we offer several ‘bolt-on’ options to provide additional help for your customers – all to ensure their delivery experience matches your own high standards, again and again.</p>
-                <div className='row'>
-                  <div className='col-lg-4'>
+                <div className='row options mt-4'>
+                  <div className='col-lg-3 pe-0'>
                     <img src={process.env.PUBLIC_URL + "/images/room-choice.png"} alt="" />  
                   </div>
-                  <div className='col-lg-8'>
+                  <div className='col-lg-9 p-0'>
                     <h3>Room of Choice</h3>
                     <p>Delivering to a room of choice, carefully, safely and without damage or fuss.</p>
                   </div>
                 </div>
-                <div className='row'>
-                  <div className='col-lg-4'>
+                <div className='row options'>
+                  <div className='col-lg-3 pe-0'>
                     <img src={process.env.PUBLIC_URL + "/images/well-built.png"} alt="" /> 
                   </div>
-                  <div className='col-lg-8'>
+                  <div className='col-lg-9 p-0'>
                     <h3>Well Built & Installed</h3>
                     <p>Our trained delivery team can correctly build and install furniture and electrical items.</p>
                   </div>
                 </div>
-                <div className='row'>
-                  <div className='col-lg-4'>
+                <div className='row options'>
+                  <div className='col-lg-3 pe-0'>
                     <img src={process.env.PUBLIC_URL + "/images/packaging.png"} alt="" /> 
                   </div>
-                  <div className='col-lg-8'>
+                  <div className='col-lg-9 p-0'>
                     <h3>Packaging Removal</h3>
                     <p>Our teams can also dispose of all product packaging with our own recycling facility.</p>
                   </div>
                 </div>
-                <div className='row'>
-                  <div className='col-lg-4'>
+                <div className='row options'>
+                  <div className='col-lg-3 pe-0'>
                     <img src={process.env.PUBLIC_URL + "/images/furniture.png"} alt="" />  
                   </div>
-                  <div className='col-lg-8'>
+                  <div className='col-lg-9 p-0'>
                     <h3>Old Furniture Removal</h3>
                     <p>Finally, we not only deliver hard-to-handle items but can take them away too.</p>
                   </div>
                 </div>
               </div>
 
-              <div className='col-lg-3'>
+              <div className='col-lg-3 p-0'>
                 <h2>Warehousing</h2>
                 <p>We are located centrally in California, just minutes away from Interstate 99. Operating from our single hub reduces the risk of loss or damage to your furniture, and our warehouses are managed with the latest technology in inventory control.</p>
                 <ul>
@@ -132,6 +133,111 @@ const Servicepage = () => {
             </div>
         </div>
       </div>
+
+
+      <div className='gallery'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-lg-2 ps-0 pe-2 '>
+              <div className='row  m-0'>
+                <div className='col-lg-12 p-0 pb-2 m-0'>
+                  <img src={process.env.PUBLIC_URL + "/images/gallery-1.jpg"} alt="gallery" />
+                </div>
+                <div className='col-lg-12 p-0 m-0'>
+                  <img src={process.env.PUBLIC_URL + "/images/gallery-2.jpg"} alt="gallery" />
+                </div>
+              </div>
+            </div>
+            <div className='col-lg-4 ps-0 pe-2'>
+              <img src={process.env.PUBLIC_URL + "/images/gallery-3.jpg"} alt="gallery" />
+            </div>
+            <div className='col-lg-2 ps-0 pe-2'>
+              <div className='row  m-0'>
+                <div className='col-lg-12 p-0 pb-2 m-0'>
+                  <img src={process.env.PUBLIC_URL + "/images/gallery-4.jpg"} alt="gallery" />
+                </div>
+                <div className='col-lg-12 p-0 m-0'>
+                  <img src={process.env.PUBLIC_URL + "/images/gallery-5.jpg"} alt="gallery" />
+                </div>
+              </div>
+            </div>
+            <div className='col-lg-4 ps-0 pe-0'>
+              <img src={process.env.PUBLIC_URL + "/images/gallery-6.jpg"} style={{height: "98%"}} alt="gallery" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div className='our-partner'>
+        <div className='container'>
+          <h2>Our Partners</h2>
+        </div>
+      </div>
+
+
+
+      <div className='our-people'>
+        <div className='container'>
+          <h2>Our People</h2>
+          <div className='row'>
+            <div className='col-lg-4'>
+              <p>We value <span>the whole customer experience,</span> and we aim to meet the highest standards across a wide variety of tasks. That’s why we’ve created our own dedicated training academy – ensuring that our delivery teams have all the skills required to provide the very best service experience for your customers.</p>
+              <p>Our people are our product, so the whole team undertake a tailored training programme to provide the very best delivery service standards.</p>
+            </div>
+            <div className='col-lg-4'>
+              <p>Our training includes furniture handling, furniture building, exacting Health & Safety standards as well as all the little things that make a big difference for your customers.</p>
+              <p>All in all, we’re constantly looking for staff who are genuinely people-centric, or in other words… really, really nice.</p>
+            </div>
+          </div>
+        </div>
+        <div className='service-man'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-lg-2'>
+                <img src={process.env.PUBLIC_URL + "/images/head.jpg"} alt="class-head" />
+                <h3>Head of the class</h3>
+                <p>Once we’ve found people with the right attitude – we invest time and energy into helping them ‘learn the ropes’ well.</p>
+              </div>
+              <div className='col-lg-2'>
+                <img src={process.env.PUBLIC_URL + "/images/getting.jpg"} alt="getting" />
+                <h3>Getting from A to B</h3>
+                <p>In order to get to a customer on-time, we help our teams improve their navigation and driving skills.</p>
+              </div>
+              <div className='col-lg-2'>
+                <img src={process.env.PUBLIC_URL + "/images/brains.jpg"} alt="brains" />
+                <h3>Brains as well as brawn</h3>
+                <p>All our teams are thoroughly trained in how to move large and awkward items safely and without damage.</p>
+              </div>
+              <div className='col-lg-2'>
+                <img src={process.env.PUBLIC_URL + "/images/prepared.jpg"} alt="class-head" />
+                <h3>Be prepared</h3>
+                <p>We check a home before moving items inside, measuring doors and tight-spaces to ensure the minimum of fuss.</p>
+              </div>
+              <div className='col-lg-2'>
+                <img src={process.env.PUBLIC_URL + "/images/putting.jpg"} alt="class-head" />
+                <h3>Putting it all together</h3>
+                <p>Each team is thoroughly trained in how to assemble and install every item of furniture and equipment we deliver.</p>
+              </div>
+              <div className='col-lg-2'>
+                <img src={process.env.PUBLIC_URL + "/images/head.jpg"} alt="class-head" />
+                <h3>Qualified and Ready                </h3>
+                <p>Once we’ve found people with the right attitude – we invest time and energy into helping them ‘learn the ropes’ well.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div className='enquiries'>
+      <Enquiries />
+    </div>
+
+
+      
+
 
     </>
   );
