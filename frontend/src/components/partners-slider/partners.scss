@@ -1,9 +1,13 @@
 .partnerslider {
-    max-width: 1044px;
+    max-width: 1700px;
     margin: 0 auto;
     padding: 60px 0;
+    .slick-list {
+        max-width: 1044px;
+    margin: 0 auto;
+    }
     .slick-next {
-        right: -17rem;
+        right: 0;
         top: 2px !important;
         &:before {
             content: "" !important;
@@ -16,7 +20,7 @@
         }
     }
     .slick-prev {
-        left: -19rem;
+        left: 0;
         top: 2px !important;
         &:before {
             content: "" !important;
