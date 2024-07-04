@@ -19,8 +19,8 @@ const Technology = () => {
           <div className="our-patners">
             <h3 className='xm-title'>OUR PARTNERS</h3>
             <div className="patners-logo">
-              <img src={process.env.PUBLIC_URL + "/images/lightfootLogo.png"} alt="Lightfoot Logo" />
-              <img src={process.env.PUBLIC_URL + "/images/Twilio.png"} alt="Twilio Logo" />
+              <img src={process.env.PUBLIC_URL + "/images/lightfootLogo-removebg-preview.png"} alt="Lightfoot Logo" />
+              <img src={process.env.PUBLIC_URL + "/images/Twilio-removebg-preview.png"} alt="Twilio Logo" />
               <img src={process.env.PUBLIC_URL + "/images/what3words_Logo_Horizontal_Red_2020.png"} alt="What3Words Logo" />
               <img src={process.env.PUBLIC_URL + "/images/Group 11521.png"} alt="Group 11521 Logo" />
               <img src={process.env.PUBLIC_URL + "/images/I.Can.Prove.IT.png"} alt="I Can Prove IT Logo" />
@@ -36,7 +36,6 @@ const Technology = () => {
         link="#"
         imageUrl1="/images/Clip path group_11zon.jpg"
       />
-      {/* Include DifferentTechnology Component */}
      
     </div>
   )

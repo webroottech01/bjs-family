@@ -1,6 +1,7 @@
 .different-technology {
     .section-content {
         margin: 0;
+        background: #24292C;
     }
 
     img {
@@ -12,16 +13,17 @@
     }
 
     .title-column {
-        padding: 40px 60px;
+        padding: 40px 55px;
 
         h2 {
             color: #FFF;
-            font-family: Eveleth;
+            font-family: 'Eveleth Dot';
             font-size: 30px;
             font-style: normal;
             font-weight: 950;
             line-height: normal;
             text-align: left;
+            padding-bottom: 5px;
         }
 
         p {
@@ -37,11 +39,32 @@
         a {
             width: 189px;
             height: 53px;
-            justify-content: center;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 16px;
+            opacity: 1;
+            background: rgb(255, 255, 255);
+            color: rgb(136, 128, 117);
+            white-space: nowrap;
+            display: flex;
+            -webkit-box-align: center;
             align-items: center;
-            border-radius: 66px;
-                background: #FFF;
-                padding: 20px 40px;
+            -webkit-box-pack: center;
+            justify-content: center;
+            border-radius: 30px;
+            padding: 17px 45px;
+            text-decoration: none;
+            font-family: 'Eveleth Dot';
+            margin-top: 40px;
         }
+                a:hover {
+                    background-color: #feba30;
+                }
+
+    }
+
+    .right-column-sc {
+        padding: 0px 0px 0px 12px;
     }
 }
