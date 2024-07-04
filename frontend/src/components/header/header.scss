@@ -13,51 +13,49 @@ $redcolor : red;
         .bg-body-tertiary {
             background: #fff !important;
         }
+
         .mainNavigation {
             margin-right: 8px;
         }
 
         .navbarsecond a#basic-nav-dropdown {
-            font-family: 'Gotham';
+            font-family: 'Gotham Bold';
             font-size: 12px;
-            font-weight: bold;
             text-transform: uppercase;
         }
-   
 
-    .mainNavigation a.nav-link {
-        font-family: Gotham Bold;
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 14.36px;
-        text-align: left;
-        color: #877B6F;
-        padding: 15px 12px;
-        font-family: 'Gotham';
-    }
 
-    .flags {
-        background: url(../../../public/images/US-Flag.png) no-repeat scroll left center;
-        padding: 0 0 0 18px;
-    }
+        .mainNavigation a.nav-link {
+            font-family: Gotham Bold;
+            font-size: 15px;
+            line-height: 14.36px;
+            text-align: left;
+            color: #877B6F;
+            padding: 15px 12px;
+        }
 
-    button.talktous {
-        width: 148px;
-        height: 42px;
-        padding: 0 0 0 18px;
-        gap: 6px;
-        border-radius: 66px;
-        opacity: 0px;
-        text-transform: uppercase;
-        color: #fff;
-        border: 0px;
-        font-weight: bold;
-        background: #747E87 url(../../../public/images/phone.png) no-repeat scroll left 14px top 11px;
-    }
+        .flags {
+            background: url(../../../public/images/US-Flag.png) no-repeat scroll left center;
+            padding: 0 0 0 18px;
+        }
 
-    .navbarsecond {
-        align-items: center;
-        gap: 15px;
+        button.talktous {
+            width: 148px;
+            height: 42px;
+            padding: 0 0 0 18px;
+            gap: 6px;
+            border-radius: 66px;
+            opacity: 0px;
+            text-transform: uppercase;
+            color: #fff;
+            border: 0px;
+            font-family: 'Gotham Bold';
+            background: #747E87 url(../../../public/images/phone.png) no-repeat scroll left 11px top 11px;
+        }
+
+        .navbarsecond {
+            align-items: center;
+            gap: 15px;
+        }
     }
-}
 }

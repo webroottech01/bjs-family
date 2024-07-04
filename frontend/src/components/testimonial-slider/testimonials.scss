@@ -1,0 +1,93 @@
+.testimonialslider {
+    ul {
+        text-align: left;
+        height: fit-content;
+        .slick-active {
+            background: #feba30 !important;
+        }
+        li {
+            background: #c5d1dc;
+            border-radius: 50px !important;
+            overflow: hidden;
+            width: 42px !important;
+            height: 3px !important;
+        }
+    }
+    .testimonialMain {
+        padding-top: 40px;
+        h3 {
+            color: var(--bjs-dark-tone-copy, #877b6f);
+            font-family: "Gotham Medium";
+            font-size: 17px;
+            font-style: italic;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 15px;
+        }
+        .testimonialContent {
+            img {
+                width: 113px !important;
+                margin-bottom: 25px;
+            }
+            .testimonialDescription {
+                color: var(--bjs-dark-tone-copy, #877b6f);
+                font-family: "Gotham Book";
+                font-size: 15px;
+                font-style: italic;
+                font-weight: 400;
+                line-height: 22px;
+                margin-bottom: 25px;
+            }
+            .testimonialAuthor {
+                color: var(--BJS-Mid-Gray, #747e87);
+                font-family: "Gotham Book";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin: 0 0 40px 0;
+            }
+        }
+        .trustpilot {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            img {
+                width: 163px !important;
+                margin-bottom: 10px;
+            }
+            .trustRating {
+                img {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+    .slick-next {
+        right: 0;
+        top: -43px;
+        &:before {
+            content: "" !important;
+            background-image: url("/../public/images/testimonialArrownext.png");
+            width: 22px;
+            height: 44px;
+            display: block;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+    .slick-prev {
+        top: -43px;
+        position: absolute !important;
+        left: 96%;
+        &:before {
+            content: "" !important;
+            background-image: url("/../public/images/testimonialArrowprev.png");
+            width: 22px;
+            height: 44px;
+            display: block;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+}

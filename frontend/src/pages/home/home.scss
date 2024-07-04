@@ -1,0 +1,181 @@
+.bannerSection {
+    background: url(../../../public/images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+    .container {
+        max-width: 1180px;
+        padding-top: 32px;
+
+        p {
+            font-family: 'Gotham book';
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: center;
+            margin: 0px;
+            color: #fff;
+        }
+
+        h1 {
+            font-family: "Brixton_Wood_PERSONAL_USE_ONLY Vector";
+            font-size: 180px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FAA00E;
+            margin-top: 10px;
+            line-height: 80px;
+        }
+
+        h5 {
+            position: absolute;
+            right: 52px;
+            bottom: -123px;
+            text-transform: uppercase;
+            font-size: 104px;
+            font-family: "Brixton_Wood_PERSONAL_USE_ONLY Vector";
+            transform: rotate(-7deg);
+            color: #73C8EF;
+        }
+
+        .maintextouter {
+            position: relative;
+        }
+
+
+    }
+
+    .bannerButtons {
+        margin-top: 19%;
+        padding-bottom: 35px;
+
+        .container {
+            max-width: 567px;
+        }
+
+        button {
+            border-radius: 66px;
+            border: 1px 0px 0px 0px;
+            opacity: 0px;
+            background: transparent;
+            width: 100%;
+            border: #fff 1px solid;
+        }
+
+        .bjsServices {
+            background: #877B6F !important;
+            text-transform: uppercase;
+            border: 0px;
+
+            span {
+                color: #FEBA30;
+            }
+
+            a {
+                font-size: 27px;
+            }
+        }
+
+        a {
+            font-family: "Gotham Book";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 51px;
+            text-align: left;
+            text-decoration: none;
+            color: #FFFFFF;
+            background: transparent;
+        }
+    }
+}
+
+
+.homeDeliverSection {
+    .container {
+        max-width: 1720px;
+    }
+}
+
+.leftContent {
+    margin-top: 80px;
+    text-align: left;
+
+    h2 {
+        font-family: 'Brixton_Wood_PERSONAL_USE_ONLY Vector';
+        font-size: 100px;
+        font-weight: 700;
+        line-height: 95.5px;
+        text-align: left;
+        text-transform: uppercase;
+        color: #73C8EF;
+    }
+
+    span {
+        color: #FBC22B;
+    }
+
+    p {
+        width: 600px;
+        margin-top: 10px;
+        color: #877B6F;
+        text-align: justify;
+    }
+
+    .moreinfo {
+        margin-top: 40px;
+    }
+
+    button {
+        padding: 16px 30px;
+        border-radius: 66px;
+        opacity: 0px;
+        color: #877B6F;
+        font-family: 'Gotham Bold';
+        text-transform: uppercase;
+        border: 0px;
+        background: #FEBA30;
+    }
+
+    .muchmore {
+        font-family: Gotham Book;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 13.4px;
+        text-align: left;
+        color: #877B6F;
+    }
+
+}
+
+.twoparts {
+    margin-top: 25px;
+
+    b {
+        font-family: 'Eveleth Dot';
+        font-size: 14px;
+        font-weight: 950;
+        line-height: 19.38px;
+        text-align: left;
+        text-transform: uppercase;
+        color: #877B6F;
+        font-weight: normal;
+    }
+
+    ul {
+        padding: 0px 0 0 22px;
+        margin-bottom: 25px;
+    }
+
+    li::marker {
+        color: #FBC22B;
+        font-size: 19px;
+    }
+
+    li {
+        color: #877B6F;
+    }
+}
+

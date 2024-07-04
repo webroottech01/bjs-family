@@ -1,4 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css"; 
 
 @font-face {
     font-family: 'Gotham Book';
@@ -45,7 +47,6 @@
     font-display: swap;
 }
 
-
 @font-face {
     font-family: 'Eveleth Dot';
     src: url('fonts/EvelethDotBold.woff2') format('woff2'),
@@ -63,4 +64,6 @@
     font-style: normal;
     font-display: swap;
 }
+
+
 
