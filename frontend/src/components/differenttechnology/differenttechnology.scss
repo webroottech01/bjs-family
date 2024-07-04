@@ -1,0 +1,70 @@
+.different-technology {
+    .section-content {
+        margin: 0;
+        background: #24292C;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .left-column-sc {
+        background: #24292C;
+    }
+
+    .title-column {
+        padding: 40px 55px;
+
+        h2 {
+            color: #FFF;
+            font-family: 'Eveleth Dot';
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 950;
+            line-height: normal;
+            text-align: left;
+            padding-bottom: 5px;
+        }
+
+        p {
+            color: #FFF;
+            font-family: "Gotham Book";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            text-align: left;
+        }
+
+        a {
+            width: 189px;
+            height: 53px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 16px;
+            opacity: 1;
+            background: rgb(255, 255, 255);
+            color: rgb(136, 128, 117);
+            white-space: nowrap;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            border-radius: 30px;
+            padding: 17px 45px;
+            text-decoration: none;
+            font-family: 'Eveleth Dot';
+            margin-top: 40px;
+        }
+                a:hover {
+                    background-color: #feba30;
+                }
+
+    }
+
+    .right-column-sc {
+        padding: 0px 0px 0px 12px;
+    }
+}
