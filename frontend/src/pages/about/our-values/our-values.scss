@@ -1,0 +1,126 @@
+$redcolor : red;
+
+.head {
+    font-size: 20px;
+
+    .ppp {
+        font-size: 50px;
+        color: $redcolor;
+    }
+}
+
+
+
+
+.Ourvalues{
+  
+  .namedAfter{
+    background-image: url("/../public/images/about-namedBG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+    .container{
+        max-width: 1090px;    
+    }
+    .row {
+        margin: 58px 0 140px;
+    }
+    h2.pageTittle{
+        color: #2C3033;
+        font-family: Brixton_Wood;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .namedMain {
+        gap:40px;
+        align-items: center;
+      h3{
+        color: var(--BJS-Mid-Gray, #747E87);
+        font-family: "Gotham Book";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 33px;
+      }
+      h4{
+        color: var(--bjs-dark-tone-copy, #877B6F);
+        font-family: "Gotham Medium";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 35px;
+        margin: 0;
+        strong{
+          color: var(--BJS-Yellow, #FEBA30);
+          font-family: "Gotham Medium";
+          font-weight: 500;  
+        }
+      }
+    }
+    .rightCol{
+        padding-left: 38px;
+        border-left: 1px solid #DCDCDC;
+        padding-right: 0;
+        p{
+            color: var(--bjs-dark-tone-copy, #877B6F);
+            font-family: "Gotham Book";
+            font-size: 14px;
+            margin: 0;
+            font-weight: 400;
+            line-height: 18px;        
+        }
+        p.based {
+            margin: 14px 0 20px;
+        }
+    }
+  }
+
+  .niceDay{
+    background-color: #72c8f0;
+    padding-top: 5px;
+    .container{
+        max-width: 1720px;
+      .row{
+        align-items: center;
+        .col-md-9{
+            padding-left:22px;
+        }
+        .col-md-3{
+            padding-left:35px;
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width:1710px){
+
+.about-us{
+.niceDay{
+
+  .container{
+    max-width: 90%;
+    .row{
+        img{
+        width: 100%;
+        }
+    }
+  }
+}
+
+
+}
+
+}
