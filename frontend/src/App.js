@@ -4,6 +4,8 @@ import './style.scss';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from './components/header/header';
 import Home from './pages/home/home';
+import Technology from './pages/about/technology/technology';
+import About from './pages/about/about/about';
 import Footer from './components/footer/footer';
 
 
@@ -14,14 +16,15 @@ function App() {
       <BrowserRouter basename='/'>
       <Header /> 
       <Routes>
-        <Route path="/" element={<Home />} />
+<Route path="/" element={<Home />} />
         <Route path="/about" element={<Home />} />
-      </Routes>
+<Route path="/technology" element={<Technology />} />
+        <Route path="/about" element={<About />} />
+</Routes>
       
-    </BrowserRouter>
-    <Footer />
-     
-    </div>
+    </BrowserRouter> 
+<Footer />
+</div>
   );
 }
 

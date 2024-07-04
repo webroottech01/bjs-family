@@ -5,13 +5,11 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { LinkContainer } from 'react-router-bootstrap';
 
-
-
 const Header = () => {
   return (
     <>
-      <div className='header sticky-top'>
-        <div className='container'>
+<div className='header sticky-top'>
+<div className='container'>
           <Navbar expand="lg" className="bg-body-tertiary">
 
           <Navbar.Brand>
@@ -55,6 +53,6 @@ const Header = () => {
         </div>
       </div>
     </>
-  )
+ )
 }
 export default Header;
