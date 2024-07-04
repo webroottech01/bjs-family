@@ -1,6 +1,7 @@
 import React from 'react'
 import "./home.scss";
 import Withbigbulky from '../../components/with big & bulky/withbigbulky';
+import DifferentTechnology from '../../components/differenttechnology/differenttechnology';
 
 const Home = () => {
     return (
@@ -69,6 +70,13 @@ const Home = () => {
             </div>
 
 <Withbigbulky/>
+<DifferentTechnology
+        layout="layout1"
+        title="what makes bjs different"
+        content="We provide the very best customer service at every stage of the delivery process, putting customers at the heart of everything we do – so that your products, reputation, customers and peace of mind really are safe in our hands."
+        link="#"
+        imageUrl1="/images/Clip path group_11zon.jpg"
+      />
 
 
 
