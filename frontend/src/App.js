@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from './components/header/header';
 import Servicepage from './pages/service-page/servicepage';
 import Newspage from './pages/news/news-page/newspage'
+import Articlepage from './pages/news/article-page/articlepage';
 import Home from './pages/home/home';
 import Technology from './pages/about/technology/technology';
 import Ourvalues from './pages/about/our-values/our-values';
@@ -19,6 +20,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/news" element={<Newspage />} />
+          <Route path="/article" element={<Articlepage />} />
           <Route path="/services" element={<Servicepage />} />
           <Route path="/" element={<Home />} />
           <Route path="/technology" element={<Technology />} />
