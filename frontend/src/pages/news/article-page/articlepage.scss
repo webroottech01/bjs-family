@@ -1,0 +1,78 @@
+.articlepageMain {
+    .articlepage {
+        background: #2c3033;
+        padding: 25px 30px;
+        button {
+            border-radius: 66px;
+            background: rgba(61, 64, 67, 0.4);
+            padding: 14px 20px;
+            a {
+                color: #fff;
+                font-family: "Gotham Book";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-decoration: none;
+            }
+        }
+        h3 {
+            color: #fff;
+            text-align: center;
+            font-family: "Gotham Bold";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 15px;
+        }
+        p {
+            color: var(--BJS-Light-Gray, #c5d1dc);
+            font-family: "Gotham Medium";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 12px; /* 100% */
+            margin: 0;
+            .comaImg {
+                height: 13px;
+            }
+        }
+    }
+    .articleContentMain {
+        max-width: 1002px;
+        margin: 0 auto;
+        padding: 30px 0;
+        img {
+            width: 100%;
+        }
+        h2 {
+            color: var(--bjs-dark-tone-copy, #24292c);
+            font-family: "Gotham Book";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px; /* 122.222% */
+        }
+        p {
+            color: var(--bjs-dark-tone-copy, #24292c);
+            font-family: "Gotham Book";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px; /* 128.571% */
+        }
+        .row {
+            width: 100%;
+        }
+        h4 {
+            color: var(--BJS-Mid-Gray, #747e87);
+            text-align: center;
+            font-family: "Gotham Book";
+            font-size: 12px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
