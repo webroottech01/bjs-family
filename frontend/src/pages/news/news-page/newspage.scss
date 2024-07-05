@@ -179,7 +179,7 @@
         background: #fff;
     }
     .newsPartners {
-        max-width: 1044px;
+        max-width: 1700px;
         margin: 0 auto;
         padding: 60px 0;
 
@@ -195,20 +195,20 @@
             &:before {
                 content: "";
                 position: absolute;
-                width: 733px;
+                width: 43%;
                 background: #d1d6d8;
                 height: 1px;
-                left: -19rem;
+                left: 0;
                 top: 12px;
             }
             &:after {
                 content: "";
                 position: absolute;
-                width: 733px;
+                width: 43%;
                 background: #d1d6d8;
                 height: 1px;
-                right: -19rem;
-                top: 12px;
+                right: 0;
+                top: 13px;
             }
         }
     }

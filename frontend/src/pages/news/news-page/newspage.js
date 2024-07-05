@@ -122,7 +122,7 @@ const Newspage = () => {
       <div className='mediaSlider'>
         <h2 className='text-center'>MENTIONED IN THE MEDIA</h2>
         <div className='sliderMediaMain'>
-            <Media />
+          <Media />
 
         </div>
 
@@ -134,12 +134,12 @@ const Newspage = () => {
         <Testimonials />
       </div>
 
-      {/* TESTImonial Carousel */}
+      {/* partner Carousel */}
       <div className='partnersMAin'>
-      <div className='newsPartners'>
-        <h2 className='text-center'>Partners</h2>
-        <Partners />
-      </div>
+        <div className='newsPartners'>
+          <h2 className='text-center'>Our Partners</h2>
+          <Partners />
+        </div>
       </div>
 
 
