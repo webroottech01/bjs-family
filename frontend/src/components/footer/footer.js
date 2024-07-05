@@ -46,7 +46,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 rightColm text-end">
+                <div className="col-md-4 rightColm text-end">
                     <p><a href="mailto:hello@bjsfamily.com">hello@bjsfamily.com</a></p>
                     <a href="#"><button className="headOffice">BJS head office</button></a>
                     <h4>retire.grow.empire</h4>

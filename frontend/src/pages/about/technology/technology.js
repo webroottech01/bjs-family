@@ -2,6 +2,8 @@ import React from 'react';
 import "./technology.scss";
 import MdMessage from '../../../components/md-message/md-message';
 import DifferentTechnology from '../../../components/differenttechnology/differenttechnology';
+import Withbigbulky from '../../../components/with big & bulky/withbigbulky';
+import Partners from '../../../components/partners-slider/partners';
 
 
 const Technology = () => {
@@ -36,6 +38,14 @@ const Technology = () => {
         link="#"
         imageUrl1="/images/Clip path group_11zon.jpg"
       />
+      <Withbigbulky></Withbigbulky>
+      
+      <div className='partnersMAin'>
+      <div className='newsPartners'>
+        <h2 className='text-center'>Our Partners</h2>
+        <Partners />
+      </div>
+      </div>
      
     </div>
   )

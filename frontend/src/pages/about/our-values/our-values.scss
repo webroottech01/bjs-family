@@ -12,22 +12,22 @@ $redcolor : red;
 
 
 
-.Ourvalues{
+.our-values{
   
   .namedAfter{
     background-image: url("/../public/images/about-namedBG.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 60px 0;
+    padding: 48px 0 60px;
     .container{
         max-width: 1090px;    
     }
     .row {
-        margin: 58px 0 140px;
+        margin: 68px 0 140px;
     }
     h2.pageTittle{
         color: #2C3033;
-        font-family: Brixton_Wood;
+        font-family: "Brixton_Wood_PERSONAL_USE_ONLY Vector";
         font-size: 60px;
         font-style: normal;
         font-weight: 700;
@@ -95,7 +95,43 @@ $redcolor : red;
     }
   }
 
+.partnersMAin {
+    background: #fff;
+}
+.newsPartners {
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 55px 0;
 
+    h2 {
+        color: #919495;
+        font-family: "Eveleth Dot";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 950;
+        line-height: normal;
+        position: relative;
+        margin: 0 auto ;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 43%;
+            background: #d1d6d8;
+            height: 1px;
+            left: 0;
+            top: 12px;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            width: 43%;
+            background: #d1d6d8;
+            height: 1px;
+            right: 0;
+            top: 12px;
+        }
+    }
+}
 
 
 

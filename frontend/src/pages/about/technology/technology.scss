@@ -41,6 +41,7 @@
         font-weight: 400;
         line-height: 18px;
     }
+
 }
 
 .our-patners {
@@ -75,4 +76,48 @@
     top: 12px;
     height: 1px;
     background: rgb(58 54 48 / 17%);
+}
+
+
+
+.about-technology{
+
+    .partnersMAin {
+        background: #fff;
+    }
+    .newsPartners {
+        max-width: 1700px;
+        margin: 0 auto;
+        padding: 55px 0;
+    
+        h2 {
+            color: #919495;
+            font-family: "Eveleth Dot";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 950;
+            line-height: normal;
+            position: relative;
+            margin: 0 auto ;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 43%;
+                background: #d1d6d8;
+                height: 1px;
+                left: 0;
+                top: 12px;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                width: 43%;
+                background: #d1d6d8;
+                height: 1px;
+                right: 0;
+                top: 12px;
+            }
+        }
+    }
+
 }
