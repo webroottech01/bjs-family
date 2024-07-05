@@ -2,6 +2,7 @@ import React from 'react';
 import "./our-values.scss";
 import MdMessage from '../../../components/md-message/md-message';
 import DifferentTechnology from '../../../components/differenttechnology/differenttechnology';
+import Partners from '../../../components/partners-slider/partners';
 
 const Ourvalues = () => {
   return (
@@ -53,7 +54,12 @@ const Ourvalues = () => {
       />
       {/* Include DifferentTechnology Component */}
 
-
+    <div className='partnersMAin'>
+      <div className='newsPartners'>
+        <h2 className='text-center'>Our Partners</h2>
+        <Partners />
+      </div>
+      </div>
 
 
 

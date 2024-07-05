@@ -22,6 +22,10 @@
         text-transform: uppercase;
         text-align: left;
         margin-bottom: 10px;
+        transition: all 0.5s;
+        &:hover {
+          color: #877b6f;
+        }
       }
       .nav{
 
@@ -34,6 +38,10 @@
         line-height: normal;
         padding: 5px 0;
         text-align: left;
+        transition: all 0.5s;
+        &:hover {
+          color: #877b6f;
+        }
         }
       }
       .fotrSocial img {
@@ -50,6 +58,10 @@
         line-height: normal;
         text-decoration-line: underline;
         text-underline-position: under;
+        transition: all 0.5s;
+        &:hover {
+          color: #877b6f;
+        }
         }
     button.headOffice{
         color: #919495;
@@ -91,6 +103,10 @@
         position: relative;
         width: fit-content;
         margin: 26px 0 18px auto;
+        transition: color 0.5s;
+        &:hover{
+          color: #e11e26;
+        }
     }
     h4:before{
         content:"";
@@ -115,6 +131,10 @@
         background: var(--BJS-Mid-Gray, #747E87);
         border:none;
         padding: 13px 20px;
+        transition: all 0.5s;
+        &:hover {
+          background: #877b6f;
+        }
       }
       button.view-map:before{
         content:"";

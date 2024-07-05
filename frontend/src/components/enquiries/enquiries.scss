@@ -1,68 +1,7 @@
 $redcolor : red;
 
 
-.header {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    background: #fff;
-
-    .container {
-        max-width: 1860px;
-
-        .bg-body-tertiary {
-            background: #fff !important;
-        }
-        .mainNavigation {
-            margin-right: 8px;
-        }
-
-        .navbarsecond a#basic-nav-dropdown {
-            font-family: 'Gotham';
-            font-size: 12px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-   
-
-    .mainNavigation a.nav-link {
-        font-family: Gotham Bold;
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 14.36px;
-        text-align: left;
-        color: #877B6F;
-        padding: 15px 12px;
-        font-family: 'Gotham';
-    }
-
-    .flags {
-        background: url(../../../public/images/US-Flag.png) no-repeat scroll left center;
-        padding: 0 0 0 18px;
-    }
-
-    button.talktous {
-        width: 148px;
-        height: 42px;
-        padding: 0 0 0 18px;
-        gap: 6px;
-        border-radius: 66px;
-        opacity: 0px;
-        text-transform: uppercase;
-        color: #fff;
-        border: 0px;
-        font-weight: bold;
-        background: #747E87 url(../../../public/images/phone.png) no-repeat scroll left 14px top 11px;
-    }
-
-    .navbarsecond {
-        align-items: center;
-        gap: 15px;
-    }
-}
-}
-
-.enquiry {
+.enquiry{
     h2 {
         font-family: 'Eveleth Dot';
         font-size: 16px;
@@ -72,3 +11,4 @@ $redcolor : red;
         color: #FEBA30;
     }
 }
+

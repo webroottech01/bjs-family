@@ -1,7 +1,7 @@
 import React from 'react';
 import Enquiries from '../../components/enquiries/enquiries';
 import "./servicepage.scss";
-
+import Partners from '../../components/partners-slider/partners';
 
 
 const serviceData = {
@@ -14,7 +14,8 @@ const serviceData = {
 const Servicepage = () => {
   return (
     <>
-      <div className='service-banner'>
+  <div className='servicePage'>
+      <div className='service-banner'> 
         <div className='container'>
           <div className='row justify-content-between'>
             <div className='col-md-8 left-sec'>
@@ -169,10 +170,11 @@ const Servicepage = () => {
       </div>
 
 
-      <div className='our-partner'>
-        <div className='container'>
-          <h2>Our Partners</h2>
-        </div>
+      <div className='partnersMAin'>
+      <div className='newsPartners'>
+        <h2 className='text-center'>Our Partners</h2>
+        <Partners />
+      </div>
       </div>
 
 
@@ -229,16 +231,13 @@ const Servicepage = () => {
         </div>
       </div>
 
-
-
-    <div className='enquiries'>
       <Enquiries />
-    </div>
+
 
 
       
 
-
+  </div>
     </>
   );
 };
