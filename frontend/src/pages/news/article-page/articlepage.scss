@@ -43,6 +43,14 @@
         max-width: 1002px;
         margin: 0 auto;
         padding: 30px 0;
+        .descriptionArticles {
+            padding-right: 30px !important;
+        }
+        .articlesocialMedia {
+            padding-left: 30px !important;
+            flex-direction: column;
+            gap: 10px;
+        }
         img {
             width: 100%;
         }
@@ -53,6 +61,7 @@
             font-style: normal;
             font-weight: 400;
             line-height: 22px; /* 122.222% */
+            margin-bottom: 20px;
         }
         p {
             color: var(--bjs-dark-tone-copy, #24292c);
@@ -60,10 +69,13 @@
             font-size: 14px;
             font-style: normal;
             font-weight: 400;
-            line-height: 18px; /* 128.571% */
+            margin-bottom: 21px;
+            line-height: 18px;
         }
         .row {
             width: 100%;
+            padding-top: 30px;
+            margin: 0 auto;
         }
         h4 {
             color: var(--BJS-Mid-Gray, #747e87);
@@ -73,6 +85,70 @@
             font-style: italic;
             font-weight: 400;
             line-height: normal;
+        }
+        .articlesocialMedia {
+            img {
+                width: 40px;
+            }
+        }
+        .whatSaid {
+            padding-top: 19px;
+            img {
+                width: 50px;
+                padding: 20px 0;
+            }
+            h3 {
+                margin: 0;
+                color: var(--bjs-dark-tone-copy, #24292c);
+                font-family: "Gotham Medium";
+                font-size: 16px;
+                font-style: italic;
+                font-weight: 500;
+                line-height: normal;
+            }
+            p {
+                color: var(--BJS-Mid-Gray, #747e87);
+                font-family: "Gotham Book";
+                font-size: 12px;
+                font-style: italic;
+                font-weight: 400;
+                line-height: 16px; /* 133.333% */
+            }
+            h4 {
+                color: var(--bjs-dark-tone-copy, #24292c);
+                font-family: "Gotham Book";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18px; /* 128.571% */
+                padding: 40px 0;
+                text-align: left;
+            }
+        }
+    }
+    .articleLastsec {
+        padding: 40px 0 20px 30px;
+        gap : 15px;
+        text-align : left;
+        border-top: 1px solid var(--BJS-Light-Gray, #C5D1DC);
+        p {
+            color: var(--BJS-Mid-Gray, #747e87);
+            font-family: "Gotham Book";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin: 0;
+        }
+        a {
+            color: var(--bjs-dark-tone-copy, #24292c);
+            font-family: "Gotham Book";
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 18px; /* 128.571% */
+            text-decoration-line: underline;
+            width: 62%;
         }
     }
 }
