@@ -1,9 +1,9 @@
 import React from "react";
 import "./differenttechnology.scss";
 
-const DifferentTechnology = ({ title, content, link, imageUrl1, imageUrl2, layout }) => {
+const DifferentTechnology = ({ title, content, link, imageUrl1, imageUrl2, layout, customClass }) => {
   return (
-    <div className="different-technology">
+    <div className={`different-technology ${customClass || ''}`}>
       {layout === 'layout1' && (
         <div className="row align-items-center section-content">
           <div className="col-md-6 left-column-sc">
