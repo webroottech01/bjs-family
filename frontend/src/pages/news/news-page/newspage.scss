@@ -15,6 +15,9 @@
                 background: #fff;
                 box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.08);
                 padding: 30px;
+                .headLink {
+                    text-decoration: none;
+                }
             }
             img {
                 width: 100%;
@@ -81,6 +84,10 @@
                 overflow: hidden;
                 .mainImgContent {
                     padding: 30px;
+                    
+                .headLink {
+                    text-decoration: none;
+                }
                 }
                 img {
                     width: 312px;

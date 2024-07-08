@@ -9,7 +9,7 @@ import Home from './pages/home/home';
 import Technology from './pages/about/technology/technology';
 import Ourvalues from './pages/about/our-values/our-values';
 import Footer from './components/footer/footer'; 
-
+import OurDifference from './pages/about/our-difference/our-difference';
 
 
 function App() { 
@@ -20,11 +20,12 @@ function App() {
         <Header />
         <Routes>
           <Route path="/news" element={<Newspage />} />
-          <Route path="/article" element={<Articlepage />} />
+          <Route path="/article/:id" element={<Articlepage />} />
           <Route path="/services" element={<Servicepage />} />
           <Route path="/" element={<Home />} />
           <Route path="/technology" element={<Technology />} />
           <Route path="/our-values" element={<Ourvalues />} /> 
+          <Route path="/our-difference" element={<OurDifference />} />
         </Routes>
 
         <Footer />
