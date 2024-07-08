@@ -12,6 +12,10 @@
         background-attachment: local;
         background-position: calc(15% - 12px) calc(0% + -30px);
 
+        .title-column {
+            padding: 40px 35px 40px 55px;
+        }
+
         .about-title {
             color: #2C3033;
             font-family: "Brixton_Wood_PERSONAL_USE_ONLY Vector";
@@ -21,15 +25,8 @@
             line-height: normal;
         }
 
-        p {
-            color: var(--bjs-dark-tone-copy, #24292C);
-            text-align: center;
-            font-family: "Gotham Book";
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 18px;
-            margin-top: 22px;
+        .newsPartners h2.text-center {
+            margin: 0 auto;
         }
     }
 
@@ -60,7 +57,7 @@
             font-style: italic;
             font-weight: 500;
             line-height: 30px;
-            padding-left: 60px;
+            padding-left: 68px;
             position: relative;
             text-align: left;
         }
@@ -75,6 +72,7 @@
             background-repeat: no-repeat;
             position: absolute;
             left: 0;
+            top: 2px;
         }
 
         p {
@@ -85,8 +83,9 @@
             font-weight: 400;
             line-height: 16px;
             text-align: left;
-            margin-bottom: 30px;
+            margin-bottom: 26px;
             padding-right: 20px;
+            padding-top: 15px;
         }
 
         h5 b {
@@ -114,7 +113,14 @@
     }
 
     .two-column-sec {
-        padding-top: 50px;
+        padding-top: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        .right-column {
+            padding-left: 3.4rem;
+            padding-right: 0;
+        }
     }
 
     section.our-team {
@@ -191,8 +197,8 @@
             padding: 0px 0px 0px 40px;
         }
 
-        .team-sec.right-column .profile-xmlogo.x2m,
-        .team-sec.mid-column .profile-xmlogo.x2m {
+        .team-sec.right-column .profile-xmlogo.xm2,
+        .team-sec.mid-column .profile-xmlogo.xm2 {
             align-items: end;
         }
 

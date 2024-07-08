@@ -34,6 +34,16 @@ const Header = () => {
                       Technology
                     </NavDropdown.Item>
                   </LinkContainer>
+                  <LinkContainer to="/our-difference">
+                    <NavDropdown.Item >
+                      Our Difference
+                    </NavDropdown.Item>
+                  </LinkContainer>
+                  <LinkContainer to="/training-academy">
+                    <NavDropdown.Item >
+                      Training Academy
+                    </NavDropdown.Item>
+                  </LinkContainer>
 
 
                 </NavDropdown>
