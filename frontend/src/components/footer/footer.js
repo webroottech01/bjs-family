@@ -20,15 +20,17 @@ const Footer = () => {
                                 <Nav.Link href="#">Our Technology</Nav.Link>
                                 <Nav.Link href="#">Charity & Community</Nav.Link>
                                 <Nav.Link href="#">Training Academy</Nav.Link>                                                                
-                            </Nav>                         
+                            </Nav>   
+                            <div className="fotrSocial">
+                                <div><a href="#"><img src={process.env.PUBLIC_URL + "/images/Star-fotr.png"} alt="" /></a></div>
+                                <div><a href="#"><img src={process.env.PUBLIC_URL + "/images/Insta-fotr.png"} alt="" /></a></div>
+                                <div><a href="#"><img src={process.env.PUBLIC_URL + "/images/Linkdin-fotr.png"} alt="" /></a></div>
+                            </div>                      
                         </div>
                         <div className="fotrServices">
                             <h3>Our Services</h3>
                             <Nav className="d-block">
-                                <Nav.Link href="#">Two-Man Home Delivery</Nav.Link>
-                                <Nav.Link href="#">BJS Extra</Nav.Link>
-                                <Nav.Link href="#">Haulage</Nav.Link>
-                                <Nav.Link href="#">Specialist Construction Haulage</Nav.Link>                                                             
+                                <Nav.Link href="#">Two-Man Home Delivery</Nav.Link>                                                          
                             </Nav>                             
                         </div>
                         <div className="fotrInfo">
@@ -38,11 +40,6 @@ const Footer = () => {
                                 <Nav.Link href="#">Privacy Policy</Nav.Link>
                                 <Nav.Link href="#">CCTV Policy</Nav.Link>                                                              
                             </Nav>                             
-                        </div>
-                        <div className="fotrSocial">
-                            <a href="#"><img src={process.env.PUBLIC_URL + "/images/fotrStar.png"} alt="" /></a>
-                            <a href="#"><img src={process.env.PUBLIC_URL + "/images/fotrInsta.png"} alt="" /></a>
-                            <a href="#"><img src={process.env.PUBLIC_URL + "/images/fotrLinkdin.png"} alt="" /></a>
                         </div>
                     </div>
                 </div>
@@ -55,7 +52,7 @@ const Footer = () => {
                 </div>
             </div>
     
-        </div>
+        </div> 
     </div>
     <div className="reserved">
         <div className='container'>
