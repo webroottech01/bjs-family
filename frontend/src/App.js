@@ -10,6 +10,7 @@ import Technology from './pages/about/technology/technology';
 import Ourvalues from './pages/about/our-values/our-values';
 import Footer from './components/footer/footer'; 
 import OurDifference from './pages/about/our-difference/our-difference';
+import TrainingAcademy from './pages/about/training-academy/training-academy';
 
 
 function App() { 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/technology" element={<Technology />} />
           <Route path="/our-values" element={<Ourvalues />} /> 
           <Route path="/our-difference" element={<OurDifference />} />
+          <Route path="/traning-academy" element= {<TrainingAcademy />} />
         </Routes>
 
         <Footer />

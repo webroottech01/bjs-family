@@ -1,6 +1,7 @@
 import React from "react";
 import "./our-difference.scss";
 import DifferentTechnology from "../../../components/differenttechnology/differenttechnology";
+import Partners from "../../../components/partners-slider/partners";
 
 const testimonials = [
   {
@@ -48,8 +49,8 @@ const teamTestimonials = [
   }
 ];
 
-const Testimonial = ({ imgSrc, partnerLogo, quote, description, name, title }) => (
-  <div className="col-md-6">
+const Testimonial = ({ imgSrc, partnerLogo, quote, description, name, title, columnClass }) => (
+  <div className={`col-md-6 ${columnClass}`}>
     <div className="differ-colum-two align-items-center">
       <div className="profile-img">
         <img src={process.env.PUBLIC_URL + imgSrc} alt={`${name} Logo`} className="profile-image" />
@@ -65,14 +66,15 @@ const Testimonial = ({ imgSrc, partnerLogo, quote, description, name, title }) =
   </div>
 );
 
-const TeamTestimonial = ({ imgSrc, quote, description, name, title, logo }) => (
-  <div className="col-md-4 team-sec">
+
+const TeamTestimonial = ({ imgSrc, quote, description, name, title, logo, customClass, teamSecClass }) => (
+  <div className={`col-md-4 team-sec ${teamSecClass}`}>
     <div className="team-quote">
       <img src={process.env.PUBLIC_URL + imgSrc} alt={`${name} Logo`} className="profile-image" />
       <h3>{quote}</h3>
     </div>
     <p>{description}</p>
-    <div className="profile-xmlogo">
+    <div className={`profile-xmlogo ${customClass}`}>
       <div className="info">
         <h5><b>{name}</b></h5>
         <h5>{title}</h5>
@@ -84,37 +86,71 @@ const TeamTestimonial = ({ imgSrc, quote, description, name, title, logo }) => (
   </div>
 );
 
+
+
+
 const OurDifference = () => {
   return (
     <div className="our-difference">
       <div className="difference-secfull">
         <div className="container-xy">
-          <h2 className="about-title">our difference</h2>
+          <h2 className="about-title">Our Difference</h2>
           <p>We thought we would let our customers tell you what makes BJS different...</p>
           <div className="row two-column-sec">
-            {testimonials.map((testimonial, index) => (
-              <Testimonial key={index} {...testimonial} />
-            ))}
+            {testimonials.map((testimonial, index) => {
+              let columnClass = '';
+              if (index === 0) {
+                columnClass = 'left-column';
+              } else if (index === 1) {
+                columnClass = 'right-column';
+              }
+              return <Testimonial key={index} {...testimonial} columnClass={columnClass} />;
+            })}
           </div>
-          <section className="our-team">
-            <div className="container-py">
+        </div>
+      </div>
+
+        <section className="our-team">
+            <div className="container-xy">
               <div className="row">
-                {teamTestimonials.map((teamTestimonial, index) => (
-                  <TeamTestimonial key={index} {...teamTestimonial} />
-                ))}
+                {teamTestimonials.map((teamTestimonial, index) => {
+                  let teamSecClass = '';
+                  let customClass = '';
+                  if (index === 1) {
+                    teamSecClass = 'mid-column';
+                    customClass = 'xm2';
+                  } else if (index === 2) {
+                    teamSecClass = 'right-column';
+                    customClass = 'xm2';
+                  }
+                  return (
+                    <TeamTestimonial
+                      key={index}
+                      {...teamTestimonial}
+                      teamSecClass={teamSecClass}
+                      customClass={customClass}
+                    />
+                  );
+                })}
               </div>
             </div>
           </section>
-        </div>
+
         <DifferentTechnology
-            layout="layout1"
-            title="what makes bjs different"
-            content="The life size training academy is a unique way for teams to hone their home delivery skills; meaning that when it comes to crossing thresholds for real, they are confident at tight corners and awkward spaces which is why we have a less than .5% damage rate and consistently high client feedback scores upwards of 97%."
-            link="#"
-            imageUrl1="/images/Clip path group_11zon.jpg"
-            customClass="blue-bg"
-          />
-      </div>
+          layout="layout1"
+          title="training academy"
+          content="The life size training academy is a unique way for teams to hone their home delivery skills; meaning that when it comes to crossing thresholds for real, they are confident at tight corners and awkward spaces which is why we have a less than .5% damage rate and consistently high client feedback scores upwards of 97%."
+          link="#"
+          imageUrl1="/images/Uplift Feature.jpg" 
+          customClass="blue-bg"
+        />
+        <div className='partnersMAin'>
+          <div className='newsPartners'>
+            <h2 className='text-center'>Our Partners</h2>
+            <Partners />
+          </div>
+        </div>
+      
     </div>
   );
 }

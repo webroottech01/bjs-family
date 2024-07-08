@@ -1,7 +1,7 @@
 .different-technology {
     .section-content {
         margin: 0;
-        background: #24292C;
+        background: #70C6F0;
     }
 
     img {
@@ -16,7 +16,7 @@
         padding: 40px 55px;
 
         h2 {
-            color: #FFF;
+            color: var(--bjs-dark-tone-copy, #24292C);
             font-family: 'Eveleth Dot';
             font-size: 30px;
             font-style: normal;
@@ -27,7 +27,7 @@
         }
 
         p {
-            color: #FFF;
+            color: var(--bjs-dark-tone-copy, #24292C);
             font-family: "Gotham Book";
             font-size: 14px;
             font-style: normal;
@@ -45,7 +45,8 @@
             font-size: 16px;
             opacity: 1;
             background: rgb(255, 255, 255);
-            color: rgb(136, 128, 117);
+            // color: rgb(136, 128, 117);
+            color: #70c6f0;
             white-space: nowrap;
             display: flex;
             -webkit-box-align: center;
@@ -60,6 +61,7 @@
         }
                 a:hover {
                     background-color: #feba30;
+                    color: #24292c;
                 }
 
     }
