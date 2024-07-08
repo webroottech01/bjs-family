@@ -1,6 +1,10 @@
 $redcolor: red;
-.enquiry{
-
+.enquiry{ 
+    padding: 26px 0 13px;
+    .container{
+        max-width: 97%;
+        width: 100%;    
+    }
     h2 {
         font-family: "Eveleth Dot";
         font-size: 16px;
@@ -8,6 +12,26 @@ $redcolor: red;
         line-height: 22.14px;
         text-align: center;
         color: #feba30;
+        border-bottom: 1px solid var(--BJS-Yellow, #FEBA30);
+        width: fit-content;
+        margin: 0 auto 12px;
+        padding-bottom: 6px;
+    }
+    h3{
+        color: var(--bjs-dark-tone-copy, #24292C);
+        font-family: "Gotham Light";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    p{
+        color: var(--BJS-Mid-Gray, #747E87);
+        font-family: "Gotham Book";
+        font-size: 13px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
     }
 }   
 
