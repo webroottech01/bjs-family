@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import './articlepage.scss';
-import newsData from '../../../api/news.json'
+import newsData from '../../../api/news.json';
 
 const Articlepage = () => {
   const { id } = useParams();
@@ -12,7 +12,12 @@ const Articlepage = () => {
     setNews(newsData);
   }, []);
 
-  const article = news.find(article => article.id.toString() === id);
+  const currentArticleId = parseInt(id);
+  const article = news.find(article => article.id === currentArticleId);
+
+  // Find the next article
+  const nextArticleId = (currentArticleId % news.length) + 1;
+  const nextArticle = news.find(article => article.id === nextArticleId);
 
   if (!article) {
     return <div>Article not found</div>;
@@ -30,13 +35,13 @@ const Articlepage = () => {
           <div className='articleHeader text-center'>
             <h3>{article.heading}</h3>
             <div className='d-flex justify-content-center gap-4'>
-              <p> <img src={process.env.PUBLIC_URL + "/images/articleIcon.png"} alt="" className='comaImg' /> {article.article}</p>
+              <p><img src={process.env.PUBLIC_URL + "/images/articleIcon.png"} alt="" className='comaImg' /> {article.article}</p>
               <p>{article.datePosted}</p>
               <p><img src={process.env.PUBLIC_URL + "/images/watchWhite.png"} alt="" className='comaImg' /> {article.time}</p>
             </div>
           </div>
           <button>
-            <Link to={`/article/${(parseInt(id) % news.length) + 1}`}>
+            <Link to={`/article/${nextArticleId}`}>
               Next Article <img src={process.env.PUBLIC_URL + "/images/articlenextarrow.png"} alt="" className='comaImg' />
             </Link>
           </button>
@@ -70,9 +75,13 @@ const Articlepage = () => {
         </div>
         <div className='d-flex justify-content-end articleLastsec align-items-center'>
           <p>Read Next Article :</p>
-          <Link to={`/article/${(parseInt(id) % news.length) + 1}`}>
-            From the Ground Up: Construct IT and Wienerberger build on strong foundations with new nationwide 4-year contract award
-          </Link>
+          {nextArticle ? (
+            <Link to={`/article/${nextArticleId}`}>
+              {nextArticle.heading}
+            </Link>
+          ) : (
+            <span>Loading...</span>
+          )}
         </div>
       </div>
     </div>
