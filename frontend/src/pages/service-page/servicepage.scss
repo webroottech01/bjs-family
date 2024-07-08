@@ -7,6 +7,8 @@ $redcolor : red;
         color: $redcolor;
     }
 }
+.servicePage{
+
 .container {
     max-width: 1720px;
     width: 92%;
@@ -44,7 +46,7 @@ $redcolor : red;
         color: #fff;
     }
     p.first-child {
-        width: 80%;
+        width: 80%; 
     }
     h4 {
         font-family: 'Eveleth Dot';
@@ -75,15 +77,15 @@ $redcolor : red;
 }
 
 .about-srvc {
-    padding: 60px 0;
+    padding: 55px 0 42px;
     h2 {
-        font-family: "Eveleth Dot";
+        font-family: "Eveleth Dot"; 
         font-size: 16px;
         font-weight: bold;
         line-height: 22.14px;
         text-align: left;
-        color: var(--bjs-dark-tone-copy, #877B6F);
-        padding-bottom: 12px;
+        color: var(--bjs-dark-tone-copy, #24292C);
+        padding-bottom: 15px;
         position: relative;
     }
     h2:before {
@@ -106,8 +108,8 @@ $redcolor : red;
             font-weight: normal;
             line-height: 18px;
             text-align: left;
-            color: var(--bjs-dark-tone-copy, #877B6F);
-            margin-bottom: 15px;
+            color: var(--bjs-dark-tone-copy, #24292C);
+            margin-bottom: 12px;
         }
     }
     p {
@@ -116,7 +118,7 @@ $redcolor : red;
         font-weight: normal;
         line-height: 18px;
         text-align: left;
-        color: var(--bjs-dark-tone-copy, #877B6F);
+        color: var(--bjs-dark-tone-copy, #24292C);
         margin-top: 30px;
     }
     .options {
@@ -138,7 +140,7 @@ $redcolor : red;
         }
     }
     .bolt-on {
-        padding: 0 60px;
+        padding: 0 60px 0 30px;
     }
 }
 
@@ -227,4 +229,68 @@ $redcolor : red;
             }
         }        
     }
+}
+
+.partnersMAin {
+    background: linear-gradient(180deg, #FFF 0%, #F3F3F3 80%);
+}
+.newsPartners {
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 55px 0;
+
+    h2 {
+        color: #919495;
+        font-family: "Eveleth Dot";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 950;
+        line-height: normal;
+        position: relative;
+        margin: 0 auto ;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 43%;
+            background: #d1d6d8;
+            height: 1px;
+            left: 0;
+            top: 12px;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            width: 43%;
+            background: #d1d6d8;
+            height: 1px;
+            right: 0;
+            top: 12px;
+        }
+    }
+}
+.enquiry{ 
+    .container{
+        max-width: 97%;
+        width: 100%;    
+    }
+}
+.caseStudy{
+    padding: 45px 0 53px;
+    overflow: hidden;
+    .container{
+
+    }
+    h2{
+        color: var(--bjs-dark-tone-copy, #24292C);
+        font-family: "Brixton_Wood_PERSONAL_USE_ONLY Vector";
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;   
+        border-bottom: 1px solid var(--BJS-Light-Gray, #C5D1DC); 
+        padding-bottom: 18px;
+    }
+}
+
+
 }

@@ -1,77 +1,9 @@
 $redcolor: red;
-
-.header {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    background: #fff;
-
-    .container {
-        max-width: 1860px;
-
-        .bg-body-tertiary {
-            background: #fff !important;
-        }
-        .mainNavigation {
-            margin-right: 8px;
-        }
-
-        .navbarsecond a#basic-nav-dropdown {
-            font-family: "Gotham";
-            font-size: 12px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        .mainNavigation a.nav-link {
-            font-family: Gotham Bold;
-            font-size: 15px;
-            font-weight: 700;
-            line-height: 14.36px;
-            text-align: left;
-            color: #877b6f;
-            padding: 15px 12px;
-            font-family: "Gotham";
-        }
-
-        .flags {
-            background: url(../../../public/images/US-Flag.png) no-repeat scroll left center;
-            padding: 0 0 0 18px;
-        }
-
-        button.talktous {
-            width: 148px;
-            height: 42px;
-            padding: 0 0 0 18px;
-            gap: 6px;
-            border-radius: 66px;
-            opacity: 0px;
-            text-transform: uppercase;
-            color: #fff;
-            border: 0px;
-            font-weight: bold;
-            background: #747e87 url(../../../public/images/phone.png) no-repeat scroll left 14px top 11px;
-        }
-
-        .navbarsecond {
-            align-items: center;
-            gap: 15px;
-        }
-    }
-}
-
-.enquiry {
-    margin: 0 0 20px;
-    .sec-leftone {
-        border-right: 1px solid var(--BJS-Light-Gray, #C5D1DC) ;
-    }
-    .col-lg-6 {
-        width:49%;
-    }
-    .row {
-        max-width: 1182px;
-        margin: 0 auto;
-        padding-top: 30px;
+.enquiry{ 
+    padding: 26px 0 13px;
+    .container{
+        max-width: 97%;
+        width: 100%;    
     }
     h2 {
         font-family: "Eveleth Dot";
@@ -80,23 +12,26 @@ $redcolor: red;
         line-height: 22.14px;
         text-align: center;
         color: #feba30;
+        border-bottom: 1px solid var(--BJS-Yellow, #FEBA30);
+        width: fit-content;
+        margin: 0 auto 12px;
+        padding-bottom: 6px;
     }
-    h3 {
-        color: var(--bjs-dark-tone-copy, #877b6f);
+    h3{
+        color: var(--bjs-dark-tone-copy, #24292C);
         font-family: "Gotham Light";
         font-size: 30px;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
-        margin-bottom: 10px;
     }
-    p {
-        color: var(--BJS-Mid-Gray, #747e87);
+    p{
+        color: var(--BJS-Mid-Gray, #747E87);
         font-family: "Gotham Book";
         font-size: 13px;
         font-style: italic;
         font-weight: 400;
         line-height: normal;
-        margin: 0;
     }
-}
+}   
+
