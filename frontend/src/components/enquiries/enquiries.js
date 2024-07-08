@@ -6,7 +6,7 @@ import "./enquiries.scss";
 const Enquiries = () => {
   return (
     <>
-<div className='enquiryMain'>
+
     <div className='enquiry'>
       <div className='container'>
         <div className='row justify-content-between'>
@@ -23,7 +23,7 @@ const Enquiries = () => {
         </div>
       </div>
     </div>
-</div>
+
     </>
   )
 }

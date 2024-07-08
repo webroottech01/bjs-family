@@ -2,7 +2,8 @@ import React from 'react';
 import Enquiries from '../../components/enquiries/enquiries';
 import "./servicepage.scss";
 import Partners from '../../components/partners-slider/partners';
-
+import Testimonials from '../../components/testimonial-slider/testimonials';
+import CaseStudy from '../../components/case-study/case-study';
 
 const serviceData = {
   imageUrl: '', // Replace with your image URL
@@ -80,37 +81,37 @@ const Servicepage = () => {
                 <h2>Bolt-on options</h2>
                 <p>Above and beyond our standard ‘delivery to the door’ service at a convenient time, we offer several ‘bolt-on’ options to provide additional help for your customers – all to ensure their delivery experience matches your own high standards, again and again.</p>
                 <div className='row options mt-4'>
-                  <div className='col-lg-3 pe-0'>
-                    <img src={process.env.PUBLIC_URL + "/images/room-choice.png"} alt="" />  
+                  <div className='col-lg-2 pe-0 text-start'>
+                    <img src={process.env.PUBLIC_URL + "/images/roomChoice.png"} alt="" />  
                   </div>
-                  <div className='col-lg-9 p-0'>
+                  <div className='col-lg-10 p-0'>
                     <h3>Room of Choice</h3>
                     <p>Delivering to a room of choice, carefully, safely and without damage or fuss.</p>
                   </div>
                 </div>
                 <div className='row options'>
-                  <div className='col-lg-3 pe-0'>
-                    <img src={process.env.PUBLIC_URL + "/images/well-built.png"} alt="" /> 
+                  <div className='col-lg-2 pe-0 text-start'>
+                    <img src={process.env.PUBLIC_URL + "/images/wellBuilt.png"} alt="" /> 
                   </div>
-                  <div className='col-lg-9 p-0'>
+                  <div className='col-lg-10 p-0'>
                     <h3>Well Built & Installed</h3>
                     <p>Our trained delivery team can correctly build and install furniture and electrical items.</p>
                   </div>
                 </div>
                 <div className='row options'>
-                  <div className='col-lg-3 pe-0'>
-                    <img src={process.env.PUBLIC_URL + "/images/packaging.png"} alt="" /> 
+                  <div className='col-lg-2 pe-0 text-start'>
+                    <img src={process.env.PUBLIC_URL + "/images/packagRemoval.png"} alt="" /> 
                   </div>
-                  <div className='col-lg-9 p-0'>
+                  <div className='col-lg-10 p-0'>
                     <h3>Packaging Removal</h3>
                     <p>Our teams can also dispose of all product packaging with our own recycling facility.</p>
                   </div>
                 </div>
                 <div className='row options'>
-                  <div className='col-lg-3 pe-0'>
-                    <img src={process.env.PUBLIC_URL + "/images/furniture.png"} alt="" />  
+                  <div className='col-lg-2 pe-0 text-start'>
+                    <img src={process.env.PUBLIC_URL + "/images/furnitureRemoval.png"} alt="" />  
                   </div>
-                  <div className='col-lg-9 p-0'>
+                  <div className='col-lg-10 p-0'>
                     <h3>Old Furniture Removal</h3>
                     <p>Finally, we not only deliver hard-to-handle items but can take them away too.</p>
                   </div>
@@ -168,8 +169,7 @@ const Servicepage = () => {
           </div>
         </div>
       </div>
-
-
+      
       <div className='partnersMAin'>
       <div className='newsPartners'>
         <h2 className='text-center'>Our Partners</h2>
@@ -178,6 +178,13 @@ const Servicepage = () => {
       </div>
 
 
+      <div className='caseStudy'>
+        <div className='container p-0'>
+          <h2 className='text-start'>Case Study</h2>
+          <CaseStudy />
+        </div>
+        
+      </div>
 
       <div className='our-people'>
         <div className='container'>
@@ -231,11 +238,26 @@ const Servicepage = () => {
         </div>
       </div>
 
+      <div className='heartFelt'>
+                <div className='row'>
+                    <div className='col-6 heartFeltCustomer'>
+                    <h2 className='text-start'>what our customers think</h2>
+
+                        <Testimonials />
+
+                    </div>
+                    <div className='col-6 heartFeltContent'>
+                        <h2>Heart Felt</h2>
+                        <p>BJS is a corporate built on compassionate values; named after Baba Jaswant Singh Ji - who remains the spiritual inspiration and guidance behind the brand after his death in 2020 – BJS has an authentic desire to make a lasting and positive impact on the world. </p>
+                        <button>Our Values</button>
+                    
+
+                    </div>
+                </div>
+        </div> 
+
+
       <Enquiries />
-
-
-
-      
 
   </div>
     </>
