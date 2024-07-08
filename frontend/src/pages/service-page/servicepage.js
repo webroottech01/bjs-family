@@ -187,22 +187,30 @@ const Servicepage = () => {
       </div>
 
       <div className='our-people'>
-        <div className='container'>
-          <h2>Our People</h2>
+        <div className='container p-0'>
           <div className='row'>
-            <div className='col-lg-4'>
+            <div className='col-md-8 textCol'>
+          <h2>Our People</h2>
+          <div className='row valueColm'>
+            <div className='col-md-5 pe-0'>
               <p>We value <span>the whole customer experience,</span> and we aim to meet the highest standards across a wide variety of tasks. That’s why we’ve created our own dedicated training academy – ensuring that our delivery teams have all the skills required to provide the very best service experience for your customers.</p>
               <p>Our people are our product, so the whole team undertake a tailored training programme to provide the very best delivery service standards.</p>
             </div>
-            <div className='col-lg-4'>
+            <div className='col-md-5 pe-0'>
               <p>Our training includes furniture handling, furniture building, exacting Health & Safety standards as well as all the little things that make a big difference for your customers.</p>
               <p>All in all, we’re constantly looking for staff who are genuinely people-centric, or in other words… really, really nice.</p>
             </div>
           </div>
+          </div>
+          <div className='col-md-4 text-end'>
+            <img src={process.env.PUBLIC_URL + "/images/PeopleRight.png"} alt="" />
+          </div>
+          </div>
         </div>
-        <div className='service-man'>
+        </div>
+        <div className='service-main'>
           <div className='container'>
-            <div className='row'>
+            <div className='row srvcSlider'>
               <div className='col-lg-2'>
                 <img src={process.env.PUBLIC_URL + "/images/head.jpg"} alt="class-head" />
                 <h3>Head of the class</h3>
@@ -229,14 +237,15 @@ const Servicepage = () => {
                 <p>Each team is thoroughly trained in how to assemble and install every item of furniture and equipment we deliver.</p>
               </div>
               <div className='col-lg-2'>
-                <img src={process.env.PUBLIC_URL + "/images/head.jpg"} alt="class-head" />
-                <h3>Qualified and Ready                </h3>
-                <p>Once we’ve found people with the right attitude – we invest time and energy into helping them ‘learn the ropes’ well.</p>
+                <img src={process.env.PUBLIC_URL + "/images/people-qualified.jpg"} alt="class-head" />
+                <h3>Qualified and Ready</h3>
+                <p>After three weeks of training, our teams are ready to provide a great two-man delivery service to your customers.</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+
+
 
       <div className='heartFelt'>
                 <div className='row'>

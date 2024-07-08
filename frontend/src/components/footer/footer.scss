@@ -24,7 +24,7 @@
         margin-bottom: 10px;
         transition: all 0.5s;
         &:hover {
-          color: #877b6f;
+          color: #000;
         }
       }
       .nav{
@@ -40,12 +40,27 @@
         text-align: left;
         transition: all 0.5s;
         &:hover {
-          color: #877b6f;
+          color: #000;
         }
         }
       }
-      .fotrSocial img {
-        margin-right: 10px;
+      .fotrSocial {
+        display: flex;
+        padding-top: 15px;
+        gap: 10px;
+        div {
+          background: #747e87;
+          width: 50px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          transition: all 0.5s;
+          &:hover{
+            background: #feba30;
+          }
+        }
       }
     }
     .rightColm{
@@ -60,7 +75,7 @@
         text-underline-position: under;
         transition: all 0.5s;
         &:hover {
-          color: #877b6f;
+          color: #000;
         }
         }
     button.headOffice{
@@ -133,7 +148,7 @@
         padding: 13px 20px;
         transition: all 0.5s;
         &:hover {
-          background: #877b6f;
+          background: #000;
         }
       }
       button.view-map:before{
