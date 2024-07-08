@@ -178,19 +178,22 @@ $redcolor : red;
 
 .our-people {
     background:#73c8ef;
-    background-image: url("../../../public/images/our-people.png");
-    padding: 60px 0 0;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
+    padding: 25px 0 0;
+    .container {
+        max-width: 1790px;
+        width: 95%;
+    }
+    .textCol{
+        padding-left: 55px;
+    
     h2 {
         font-family: 'Brixton_Wood_PERSONAL_USE_ONLY Vector';
         font-size: 60px;
         font-weight: bold;
         line-height: 57.3px;
         text-align: left;
-        color: #24292C;
-        margin-bottom: 25px;
+        color: #fff;
+        margin: 20px 0;
     }
     p {
         font-family: Gotham Book;
@@ -198,18 +201,45 @@ $redcolor : red;
         font-weight: 400;
         line-height: 18px;
         text-align: left;
-        color: var(--bjs-dark-tone-copy, #877B6F);
+        color: var(--bjs-dark-tone-copy, #24292C);
+        margin-bottom: 18px;
         span {
             font-family: 'Gotham Medium';
         }
     }
-    .service-man { 
+    }
+    .valueColm{
+        gap: 30px;
+
+    }
+}
+    .service-main { 
+        margin-top: -212px;
+        padding-bottom: 40px;
+        .srvcSlider{
+            gap: 10px;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            overflow-x: scroll;
+            padding: 0 40px 30px;     
+    
+        }
         .col-lg-2 {
             padding: 20px 20px 30px 20px;
-            border-radius: 10px 10px 0px 0px;
+            border-radius: 10px;
+            max-width: 330px;
+            width: 100%;
             background: #fff;
+            box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.08);
             p {
                 text-align: center;
+                color: var(--bjs-dark-tone-copy, #24292C);
+                font-family: "Gotham Book";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18px; 
+                margin: 0;
             }
         }
         img {
@@ -224,12 +254,32 @@ $redcolor : red;
                 line-height: 19.38px;
                 text-align: center;
                 font-family: 'Eveleth Dot';
-                color: var(--bjs-dark-tone-copy, #877B6F);
+                color: var(--bjs-dark-tone-copy, #24292C);
                 margin: 20px 0 10px;
             }
-        }        
+        }   
+
+        ::-webkit-scrollbar {
+
+            width: 1840px;
+            height: 4px;
+            scrollbar-width: 1700px;
+        }
+                            
+        ::-webkit-scrollbar-track {
+            background-color: #f4f5f5;
+            border-radius: 10px;
+
+        }
+                            
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #DEE0E0;
+            width: 1400px;
+        }    
+    
     }
-}
+
 
 .partnersMAin {
     background: linear-gradient(180deg, #FFF 0%, #F3F3F3 80%);
