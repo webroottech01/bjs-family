@@ -32,6 +32,10 @@ $redcolor : red;
             text-align: left;
             color: #877B6F;
             padding: 15px 12px;
+
+            &.active{
+                color: #feba30;
+            }
         }
 
         .flags {
@@ -39,23 +43,30 @@ $redcolor : red;
             padding: 0 0 0 18px;
         }
 
-        button.talktous {
-            width: 148px;
-            height: 42px;
-            padding: 0 0 0 18px;
-            gap: 6px;
-            border-radius: 66px;
-            opacity: 0px;
-            text-transform: uppercase;
-            color: #fff;
-            border: 0px;
-            font-family: 'Gotham Bold';
-            background: #747E87 url(../../../public/images/phone.png) no-repeat scroll left 11px top 11px;
-        }
-
         .navbarsecond {
             align-items: center;
             gap: 15px;
+
+            // .nav-link.active{
+            //     .talktous{
+            //         color: #fff;
+            //         background-color: #000;
+            //     }
+            // }
+
+            .talktous {
+                width: 148px;
+                height: 42px;
+                padding: 0 0 0 18px;
+                gap: 6px;
+                border-radius: 66px;
+                opacity: 0px;
+                text-transform: uppercase;
+                color: #fff;
+                border: 0px;
+                font-family: 'Gotham Bold';
+                background: #747E87 url(../../../public/images/phone.png) no-repeat scroll left 11px top 11px;
+            }
         }
     }
 }
