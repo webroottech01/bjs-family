@@ -54,7 +54,7 @@ const Technology = () => {
       <div className='newsPartners'>
         <h2 className='text-center'>Our Partners</h2>
         <Partners />
-      </div>
+      </div> 
       </div></div>
   );
 }

@@ -17,7 +17,7 @@ const TrainingAcademy = () => {
                                             Our life size training academy, based at a top secret location (just off J9 M6), is a unique way for our teams to hone their home delivery skills. <br /><br />
                                             Practice does indeed make perfect so when it comes to crossing thresholds for our customers, our teams are confident at tight corners and awkward spaces.
                         </p>
-                        <div className='link-btn text-start'>
+                        <div className='link-btn text-start'> 
                             <a href='#'>
                                 Join the BJS Family <img src={process.env.PUBLIC_URL + "/images/errow.png"} alt="image" /> 
                             </a>
