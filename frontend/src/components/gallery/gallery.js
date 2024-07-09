@@ -18,7 +18,7 @@ const Gallery = () => {
         <div className="row">
           <div className="col-md-6 left-column">
             <div className="gallery-out">
-              <div className="gallery-item">
+              <div className="gallery-item"> 
                 <img
                   src={process.env.PUBLIC_URL + "/images/image 41.jpg"}
                   alt="image"
