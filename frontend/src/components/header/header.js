@@ -44,7 +44,11 @@ const Header = () => {
                       Training Academy
                     </NavDropdown.Item>
                   </LinkContainer>
-
+                  <LinkContainer to="/charity-community">
+                    <NavDropdown.Item >
+                      Charity & Community
+                    </NavDropdown.Item>
+                  </LinkContainer>
 
                 </NavDropdown>
                 <LinkContainer to="/news">

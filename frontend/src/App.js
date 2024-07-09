@@ -11,6 +11,7 @@ import Ourvalues from './pages/about/our-values/our-values';
 import Footer from './components/footer/footer'; 
 import OurDifference from './pages/about/our-difference/our-difference';
 import TrainingAcademy from './pages/about/training-academy/training-academy';
+import CharityCommunity from './pages/about/charity-community/charity-community';
 import Archivepage from './pages/news/archive-page/archive';
 
 
@@ -31,6 +32,7 @@ function App() {
           <Route path="/our-values" element={<Ourvalues />} /> 
           <Route path="/our-difference" element={<OurDifference />} />
           <Route path="/training-academy" element= {<TrainingAcademy />} />
+          <Route path="/charity-community" element= {<CharityCommunity />} />
         </Routes>
 
         <Footer />
