@@ -12,7 +12,9 @@ import Footer from './components/footer/footer';
 import OurDifference from './pages/about/our-difference/our-difference';
 import TrainingAcademy from './pages/about/training-academy/training-academy';
 import Archivepage from './pages/news/archive-page/archive';
+import GalleryPage1 from "./pages/about/gallery-page1/gallery-page1";
 import Ourstory from './pages/about/our-story/our-story';
+
 
 
 
@@ -33,6 +35,8 @@ function App() {
           <Route path="/our-story" element={<Ourstory />} />
           <Route path="/our-difference" element={<OurDifference />} />
           <Route path="/training-academy" element= {<TrainingAcademy />} />
+        <Route path="/gallery-page1" element={<GalleryPage1 />} />
+
         </Routes>
 
         <Footer />
