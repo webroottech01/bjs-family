@@ -5,7 +5,7 @@ import DifferentTechnology from "../../../components/differenttechnology/differe
 import Partners from '../../../components/partners-slider/partners';
 
 const TrainingAcademy = () => {
-  return (
+  return ( 
     <section className="about-training-academy">
         <div className='training-academy'>
             <div className='container-xy'>
