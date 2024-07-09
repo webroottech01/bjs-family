@@ -30,7 +30,7 @@ function App() {
           <Route path="/technology" element={<Technology />} />
           <Route path="/our-values" element={<Ourvalues />} /> 
           <Route path="/our-difference" element={<OurDifference />} />
-          <Route path="/traning-academy" element= {<TrainingAcademy />} />
+          <Route path="/training-academy" element= {<TrainingAcademy />} />
         </Routes>
 
         <Footer />
