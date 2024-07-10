@@ -4,6 +4,19 @@ import Gallery from '../../../components/gallery/gallery';
 import DifferentTechnology from "../../../components/differenttechnology/differenttechnology";
 import Partners from '../../../components/partners-slider/partners';
 
+const imagesForGallery = {
+  leftColumn: [
+    "/images/image 41.jpg",
+    "/images/image 42.jpg",
+    "/images/image 43.jpg"
+  ],
+  rightColumn: [
+    "/images/image 44.jpg",
+    "/images/image 45.jpg",
+    "/images/image 46.jpg"
+  ]
+};
+
 const TrainingAcademy = () => {
   return ( 
     <section className="about-training-academy">
@@ -29,7 +42,9 @@ const TrainingAcademy = () => {
                 </div>
             </div>
         </div>
-        <Gallery />
+
+        <Gallery images={imagesForGallery} />
+
         <DifferentTechnology
           layout="layout1"
           title="charity & community"
