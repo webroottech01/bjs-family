@@ -15,6 +15,7 @@ import CharityCommunity from './pages/about/charity-community/charity-community'
 import Archivepage from './pages/news/archive-page/archive';
 import GalleryPage1 from "./pages/about/gallery-page1/gallery-page1";
 import Ourstory from './pages/about/our-story/our-story';
+import Careers from './pages/career-page/careers';
 
 
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/article/:id" element={<Articlepage />} />
           <Route path="archive" element={<Archivepage />} />
           <Route path="/services" element={<Servicepage />} />
+          <Route path="/careers" element={<Careers />} />
           <Route path="/" element={<Home />} />
           <Route path="/technology" element={<Technology />} />
           <Route path="/our-values" element={<Ourvalues />} /> 
