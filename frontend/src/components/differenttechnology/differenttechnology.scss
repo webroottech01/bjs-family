@@ -70,3 +70,79 @@
         padding: 0px 0px 0px 12px;
     }
 }
+
+
+
+
+/***********Responsive*************/ 
+@media only screen and (max-width:1300px) {
+    .different-technology {
+        .title-column {
+            padding: 25px 40px !important;
+            h2 {
+                font-size: 27px;
+                padding-bottom: 0;
+            }
+            a {
+                width: 170px;
+                height: 48px;
+                font-size: 15px;
+                padding: 15px 38px;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:1024px) {
+    .different-technology {
+        .title-column {
+            padding: 20px 20px !important;
+            h2 {
+                font-size: 24px;
+            }
+            a {
+                width: 162px;
+                height: 44px;
+                font-size: 15px;
+                padding: 12px 30px;
+                margin-top: 20px;
+                border-radius: 20px;
+            }
+        }
+    }  
+}
+
+@media only screen and (max-width:820px) {
+    .different-technology {
+        .right-column-sc {
+            padding: 0px 0px 0px 0;
+        }
+        .title-column {
+            padding: 30px 20px !important;
+        }
+    }
+}
+@media only screen and (max-width:768px) {
+    .different-technology {
+        .title-column {
+            a {
+                width: 150px;
+                height: 42px;
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:480px) {
+    .different-technology {
+        .title-column {
+            padding: 30px 10px !important;
+            h2 {
+                font-size: 22px;
+            }
+        } 
+    }
+}

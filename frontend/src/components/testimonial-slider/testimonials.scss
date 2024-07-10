@@ -95,3 +95,60 @@
         }
     }
 }
+
+
+/****************responsive******************/ 
+@media only screen and (max-width:1300px) {
+    .testimonialslider {
+        .testimonialMain {
+            .testimonialContent {
+                img {
+                    width: 100px !important;
+                    margin-bottom: 20px;
+                }
+                .testimonialDescription {
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+            h3 {
+                font-size: 16px;
+                margin-bottom: 12px;
+            }
+            .trustpilot {
+                img {
+                    width: 140px !important;
+                    margin-bottom: 10px;
+                }              
+            } 
+        }
+        .slick-next:before, .slick-prev:before {
+            width: 18px;
+            height: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .testimonialslider {
+        .testimonialMain {
+            padding-top: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .testimonialslider {
+        .slick-prev, .slick-next {
+            top: -75px;
+        }
+    }
+}
+@media only screen and (max-width:350px) {
+    .testimonialslider {
+        .slick-prev, .slick-next {
+            top: -95px;
+        }
+    }
+}
