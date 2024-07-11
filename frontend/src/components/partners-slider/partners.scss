@@ -106,6 +106,9 @@
             width: 40px;
             height: 40px;
         }
+        .partnerMainlogo {
+            width: 130px;
+        }
     }
 }
 
@@ -135,6 +138,11 @@
 }
 @media only screen and (max-width:668px) {
     .partnerslider {
+        padding: 30px 0;
+        .slick-next:before,  .slick-prev:before {
+            width: 30px;
+            height: 30px;
+        } 
         ul {
             li {
                 border-radius: 8px !important;

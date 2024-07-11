@@ -456,13 +456,23 @@
             max-width: 1400px;
         }
     }
+    .newsPartners {
+        max-width: 1370px;
+    }
+    .leftContent {
+        h2 {
+            font-size: 92px;
+            line-height: 90.5px;
+        }
+    }
     .beliefDevine {
         .container {
             max-width: 1400px !important;
         }
-    }
-    .newsPartners {
-        max-width: 1370px;
+        h2 {
+            font-size: 60px;
+            line-height: normal;
+        }
     }
 }
 /***********Screen Size 1400px*************/ 
@@ -960,8 +970,8 @@
         }
     }
 }
-/***********Screen Size 667px*************/ 
-@media only screen and (max-width:667px) {
+/***********Screen Size 668px*************/ 
+@media only screen and (max-width:668px) {
     .bannerSection {
         .bannerButtons {
             margin-top: 24%;
@@ -969,6 +979,12 @@
                 a {
                     font-size: 18px;
                 }
+            }
+            .row {
+                gap: 10px;
+            }
+            button {
+                width: 50%;
             }
         }
     }
@@ -989,8 +1005,9 @@
             }
         }
         .bannerButtons {
+            margin-top: 30%;
             button {
-                margin-bottom: 10px;
+                width: 75%;
             }
         }
     }
@@ -998,6 +1015,9 @@
         h2 {
             font-size: 38px;
             line-height: 46.5px;
+        }
+        button {
+            width: 100%;
         }
     }
     .beliefDevine {
@@ -1014,15 +1034,15 @@
     }
     .heartFelt {
         .heartFeltCustomer {
-            padding: 46px 15px 30px;
+            padding: 30px 15px ;
             h2 {
                 font-size: 18px;
                 padding: 8px 0 10px;
-                width: 90%;
+                width: 80%;
             }
             .testimonialslider {
                 .slick-prev {
-                    left: 0;
+                    left: 80%;
                 }
             }
         }
@@ -1042,5 +1062,25 @@
         h2:before, h2:after {
             width: 20%;
         }
+    }
+    .bannerSection {
+        .bannerButtons {
+            margin-top: 38%;
+            button {
+                width: 100%;
+            }    
+        }
+    }
+    .leftContent {
+        h2 {
+            font-size: 32px;
+            line-height: 40.5px;
+        }   
+    }
+    .beliefDevine {
+        h2 {
+            font-size: 28px;
+            line-height: normal;
+        }   
     }
 }
