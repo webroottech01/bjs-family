@@ -23,7 +23,7 @@ const Newspage = () => {
   return (
     <div className='newsMain'>
       <div className='container imageSection'>
-        <div className='row justify-content-between'>
+        <div className='row justify-content-between listnewsDesktop'>
           <div className='col-md-6 mainImg p-0'>
             <div className='singleNews'>
               <img src={process.env.PUBLIC_URL + newsData[0].imageUrl} alt="" />
@@ -64,6 +64,29 @@ const Newspage = () => {
             ))}
           </div>
         </div>
+
+              
+          <div className='listNews listnewsMobile p-0'>
+            {newsData.slice(0, 5).map((news) => (
+              <div key={news.id} className='singleNews d-flex'>
+                <img src={process.env.PUBLIC_URL + news.imageUrl} alt="" />
+                <div className='mainImgContent'>
+                <Link className='headLink' to={`/article/${news.id}`}><h3 className='text-start'>{newsData[0].heading}</h3></Link>
+                  <div className='d-flex justify-content-start gap-3 article'>
+                    <p><img src={process.env.PUBLIC_URL + "/images/articleIcon.png"} alt="" className='iconMain' /> {news.article}</p>
+                    <p>{news.datePosted}</p>
+                  </div>
+                  <div className='d-flex justify-content-between timeLink'>
+                    <p><img src={process.env.PUBLIC_URL + "/images/clock.png"} alt="" className='iconMain' /> {news.time}</p>
+                    <Link to={`/article/${news.id}`}>Read Article <img src={process.env.PUBLIC_URL + "/images/nextArrow.png"} alt="" className='iconMain' /> </Link>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+
+
       </div>
       <div className='totalStories'>
         <p>You have viewed {viewedStories} out of {totalStories} stories</p>
