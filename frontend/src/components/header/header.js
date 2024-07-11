@@ -38,17 +38,17 @@ const Header = () => {
         {
           name: "charity & community",
           link: "/charity-community",
-          image: process.env.PUBLIC_URL + "images/about-technology.webp",
+          image: process.env.PUBLIC_URL + "images/about-charity.webp",
         },
         {
           name: "training academy",
           link: "/training-academy",
-          image: process.env.PUBLIC_URL + "images/about-technology.webp",
+          image: process.env.PUBLIC_URL + "images/about-training.webp",
         },
         {
           name: "our story",
           link: "/our-story",
-          image: process.env.PUBLIC_URL + "images/about-technology.webp",
+          image: process.env.PUBLIC_URL + "images/about-story.webp",
         },
       ],
       defaultImage: process.env.PUBLIC_URL + "images/about-default.webp",
