@@ -31,7 +31,7 @@ const DifferentTechnology = ({ title, content, customContent, link, imageUrl1, i
               <a href={link}>Learn More</a>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 right-column-sc">
             <div className="image-column">
               <img src={process.env.PUBLIC_URL + imageUrl2} alt="Different Image" />
             </div>
