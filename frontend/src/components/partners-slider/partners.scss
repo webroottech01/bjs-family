@@ -1,59 +1,63 @@
 .partnerslider {
-    max-width: 1700px;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 60px 0;
+  .slick-list {
+    max-width: 1044px;
     margin: 0 auto;
-    padding: 60px 0;
-    .slick-list {
-        max-width: 1044px;
+  }
+  .slick-next {
+    right: 0;
+    top: 2px !important;
+    &:before {
+      content: "" !important;
+      background-image: url("/../public/images/partnerNext.png");
+      width: 60px;
+      height: 60px;
+      display: block;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  .slick-prev {
+    left: 0;
+    top: 2px !important;
+    &:before {
+      content: "" !important;
+      background-image: url("/../public/images/partnerPrev.png");
+      width: 60px;
+      height: 60px;
+      display: block;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  .slick-dots li button {
+    padding: 0 !important;
+    width: 100%;
+}
+  ul {
+    .slick-active {
+      background: #feba30 !important;
+    }
+    li {
+      background: #c5d1dc;
+      border-radius: 50px !important;
+      overflow: hidden;
+      width: 42px !important;
+      height: 3px !important;
+    }
+  }
+  .partnerMainlogo {
+    width: 168px;
     margin: 0 auto;
-    }
-    .slick-next {
-        right: 0;
-        top: 2px !important;
-        &:before {
-            content: "" !important;
-            background-image: url("/../public/images/partnerNext.png");
-            width: 60px;
-            height: 60px;
-            display: block;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-    }
-    .slick-prev {
-        left: 0;
-        top: 2px !important;
-        &:before {
-            content: "" !important;
-            background-image: url("/../public/images/partnerPrev.png");
-            width: 60px;
-            height: 60px;
-            display: block;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-    }
-    ul {
-        .slick-active {
-            background: #feba30 !important;
-        }
-        li {
-            background: #c5d1dc;
-            border-radius: 50px !important;
-            overflow: hidden;
-            width: 42px !important;
-            height: 3px !important;
-        }
-    }
-    .partnerMainlogo {
-        width: 168px;
-        margin: 0 auto;
-    }
+  }
 
-    .slick-track {
-        display: flex;
-        align-items: center;
-        padding-bottom: 40px;
-    }
+  .slick-track {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+  }
 }
 
 
