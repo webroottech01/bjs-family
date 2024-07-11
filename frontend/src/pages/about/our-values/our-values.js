@@ -11,7 +11,7 @@ const Ourvalues = () => {
       <div className="container p-0">
         <h2 className='pageTittle'>OUR VALUES</h2>
         <div className='row'>
-          <div className='col-md-5 p-0'>
+          <div className='col-md-5 p-0'> 
             <div className='namedMain d-flex'>
               <div className='imageSec'>
                 <img src={process.env.PUBLIC_URL + "/images/babaJaswant.png"} alt="" />
@@ -34,7 +34,7 @@ const Ourvalues = () => {
       <div className='container p-0'>
         <div className='row'>
           <div className='col-md-9 text-start'>
-          <img src={process.env.PUBLIC_URL + "/images/niceday-delivery.png"} alt="" />
+            <img src={process.env.PUBLIC_URL + "/images/niceday-delivery.png"} alt="" />
           </div>
           <div className='col-md-3 text-start'>
             <img src={process.env.PUBLIC_URL + "/images/about-delivery.png"} alt="" />
@@ -60,8 +60,6 @@ const Ourvalues = () => {
         <Partners />
       </div>
     </div>
-
-
 
   </div>
   )
