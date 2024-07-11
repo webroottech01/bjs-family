@@ -22,8 +22,8 @@ const Home = () => {
 
                             <div className='row justify-content-between'>
 
-                                <div className='col-6'><button><a href="">Learn more about our values</a></button></div>
-                                <div className='col-6'><button className='bjsServices'><a href=""><span>BJS</span> Services</a></button></div>
+                                <div className='col-lg-6 col-md-6 col-sm-12'><button><a href="">Learn more about our values</a></button></div>
+                                <div className='col-lg-6 col-md-6 col-sm-12'><button className='bjsServices'><a href=""><span>BJS</span> Services</a></button></div>
                             </div>
 
                         </div>
@@ -36,12 +36,12 @@ const Home = () => {
             <div className='homeDeliverSection'>
                 <div className="container mb-5">
                     <div className="row">
-                        <div className='col-7 leftContent'>
+                        <div className='col-lg-7 col-md-12 col-sm-12  leftContent'>
                             <h2>high <span>cali</span>ber home delivery</h2>
                             <p>Award winning two-man home delivery teams, trained in excellence and trusted by leading brands. With an enviable track record of more than a decade the BJS family offer a range of flexible services to keep you and your customers happy.</p>
                             <div className='col-12 twoparts'>
                                 <div className='row'>
-                                    <div className='col-6'>
+                                    <div className='col-lg-6 col-md-6 col-sm-12'>
                                         <b>We offer flexibility</b>
                                         <ul>
                                             <li>Next day delivery</li>
@@ -50,7 +50,7 @@ const Home = () => {
                                             <li>Room of choice</li>
                                         </ul>
                                     </div>
-                                    <div className='col-6'>
+                                    <div className='col-lg-6 col-md-6 col-sm-12'>
                                         <b>We go above & beyond</b>
                                         <ul>
                                             <li>Room of choice</li>
@@ -66,7 +66,7 @@ const Home = () => {
                                 <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
                             </svg></button></div>
                         </div>
-                        <div className='col-5'><img src={process.env.PUBLIC_URL + "/images/sofaimage.jpg"} alt="" width="100%" /></div>
+                        <div className='col-lg-5 col-md-12 col-sm-12 img-sec'><img src={process.env.PUBLIC_URL + "/images/sofaimage.jpg"} alt="" width="100%" /></div>
                     </div>
 
                 </div>
@@ -77,7 +77,7 @@ const Home = () => {
             <div className='beliefDevine'>
                 <div className="container mb-5">
                     <div className="row">
-                        <div className='col-7 leftContent'>
+                        <div className='col-lg-7 col-md-12 col-sm-12 leftContent'>
                             <h2>belief in a divine flow and the team</h2>
                             <p>From the very inception of BJS, spiritual guidance was sought from Baba Jaswant Singh Ji – whom the company is named after. Before his death in 2020, Baba Jaswant Singh Ji was based in Punjab and had a trust that ran projects for the welfare of humanity; providing health care facilities, higher medical education and to show ‘the path of spiritual righteousness’, to ‘foster human values and welfare with esteemed devotion indeed’.
                             </p>
@@ -102,7 +102,7 @@ const Home = () => {
                             </div>
                             <div className='col-12 moreinfo'><button>OUR STORY</button></div>
                         </div>
-                        <div className='col-5'><img src={process.env.PUBLIC_URL + "/images/devineimg.jpg"} alt="" width="100%" /></div>
+                        <div className='col-lg-5 col-md-12 col-sm-12 '><img src={process.env.PUBLIC_URL + "/images/devineimg.jpg"} alt="" width="100%" /></div>
                     </div>
 
                 </div>
@@ -132,13 +132,13 @@ const Home = () => {
 
             <div className='heartFelt'>
                 <div className='row'>
-                    <div className='col-6 heartFeltCustomer'>
+                    <div className='col-lg-6 col-md-12 col-sm-12 heartFeltCustomer'>
                     <h2 className='text-start'>what our customers think</h2>
 
                         <Testimonials />
 
                     </div>
-                    <div className='col-6 heartFeltContent'>
+                    <div className='col-lg-6 col-md-12 col-sm-12 heartFeltContent'>
                         <h2>Heart Felt</h2>
                         <p>BJS is a corporate built on compassionate values; named after Baba Jaswant Singh Ji - who remains the spiritual inspiration and guidance behind the brand after his death in 2020 – BJS has an authentic desire to make a lasting and positive impact on the world. </p>
                         <button>Our Values</button>

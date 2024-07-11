@@ -84,10 +84,10 @@
                 overflow: hidden;
                 .mainImgContent {
                     padding: 30px;
-                    
-                .headLink {
-                    text-decoration: none;
-                }
+
+                    .headLink {
+                        text-decoration: none;
+                    }
                 }
                 img {
                     width: 312px;
@@ -232,13 +232,243 @@
             font-family: "Eveleth Dot";
             padding: 10.5px 0 15px;
             margin: 0;
-            border-bottom: 1px solid var(--BJS-Light-Gray, #C5D1DC);
+            border-bottom: 1px solid var(--BJS-Light-Gray, #c5d1dc);
         }
 
         .testimonialMain {
             display: flex !important;
             justify-content: space-between;
             padding-top: 40px;
+        }
+    }
+}
+
+// Responsive
+
+@media only screen and (max-width: 1720px) {
+    .newsMain {
+        .container {
+            max-width: 96%;
+            margin: 0 auto;
+        }
+        .imageSection {
+            .listNews {
+                .singleNews {
+                    .timeLink {
+                        margin-top: 47px;
+                    }
+                    img {
+                        width: 297px;
+                    }
+                }
+            }
+        }
+        .newsPartners {
+            max-width: 86%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .newsMain {
+        .imageSection {
+            .mainImg {
+                .mainImgContent {
+                    .row {
+                        flex-direction: column;
+                        .col-md-9 {
+                            width: 100%;
+                        }
+                        .col-md-3 {
+                            width: 100%;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+                h3 {
+                    margin-bottom: 13px;
+                }
+            }
+            .listNews {
+                .singleNews {
+                    .timeLink {
+                        margin-top: 26px;
+                    }
+                    img {
+                        width: 267px;
+                    }
+                    h3 {
+                        font-size: 12px;
+                    }
+                }
+            }
+            h3 {
+                font-size: 14px;
+            }
+        }
+        .mediaslidercompo {
+            max-width: 70%;
+            .mediaMainlogo {
+                width: 70px;
+                height: 70px;
+            }
+        }
+        .totalStories {
+            padding: 29px 0 80px !important;
+            a {
+                font-size: 14px;
+                padding: 12px 40px;
+                top: 39px;
+            }
+        }
+        .mediaSlider {
+            h2 {
+                font-size: 32px;
+            }
+        }
+        .newstestimonial {
+            h2 {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1210px) {
+    .newsMain {
+        .imageSection {
+            .row {
+                flex-direction: column;
+                .mainImg {
+                    width: 100%;
+                }
+            }
+            .listnewsDesktop {
+                display: none;
+            }
+            .listNews {
+                .singleNews {
+                    .mainImgContent {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .newsPartners {
+            h2 {
+                &:before {
+                    width: 40%;
+                    top: 13px;
+                }
+                &:after {
+                    width: 40%;
+                    top: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .newsMain {
+        .mediaslidercompo {
+            padding: 30px 0;
+        }
+        .totalStories {
+            padding: 29px 0 50px !important;
+            p {
+                font-size: 14px;
+            }
+            a {
+                font-size: 12px;
+                padding: 10px 32px;
+                top: 30px;
+            }
+        }
+        .imageSection {
+            .article {
+                p {
+                    font-size: 11px;
+                }
+            }
+            .listNews {
+                .singleNews {
+                    .timeLink {
+                        margin-top: 27px;
+                        a {
+                            font-size: 12px;
+                        }
+                        p {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+        .newstestimonial {
+            .testimonialMain {
+                flex-direction: column;
+                .trustpilot {
+                    align-items: start;
+                    img {
+                        width: 100px !important;
+                    }
+                    p {
+                        font-size: 13px;
+                    }
+                }
+                .testimonialContent {
+                    .testimonialDescription {
+                        font-size: 13px;
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+            .testimonialslider {
+                .slick-prev {
+                    left: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .newsMain {
+        .imageSection {
+            .listNews {
+                .singleNews {
+                    flex-direction: column;
+                    margin-bottom: 30px;
+                    img {
+                        width: 100%;
+                    }
+                    .timeLink {
+                        a {
+                            font-size: 10px;
+                        }
+                    }
+                    .mainImgContent {
+                        padding: 18px;
+                    }
+                }
+            }
+        }
+        .mediaSlider {
+            padding: 60px 0;
+            h2 {
+                font-size: 23px;
+            }
+        }
+        .mediaslidercompo {
+            .mediaLogo {
+                flex-direction: column;
+            }
+        }
+        .newstestimonial {
+            .testimonialMain {
+                padding-top: 20px;
+            }
         }
     }
 }

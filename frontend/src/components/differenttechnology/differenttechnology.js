@@ -6,7 +6,7 @@ const DifferentTechnology = ({ title, content, customContent, link, imageUrl1, i
     <div className={`different-technology ${customClass || ''}`}>
       {layout === 'layout1' && (
         <div className="row align-items-center section-content">
-          <div className="col-md-6 left-column-sc">
+          <div className="col-lg-6 col-md-12 left-column-sc">
             <div className="title-column">
               <h2>{title}</h2>
               <p>{content}</p>
@@ -14,7 +14,7 @@ const DifferentTechnology = ({ title, content, customContent, link, imageUrl1, i
               <a href={link}>Learn More</a>
             </div>
           </div>
-          <div className="col-md-6 right-column-sc">
+          <div className="col-lg-6 col-md-12 right-column-sc">
             <div className="image-column">
               <img src={process.env.PUBLIC_URL + imageUrl1} alt="Image" />
             </div>
