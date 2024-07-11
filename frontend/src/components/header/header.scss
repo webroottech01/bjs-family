@@ -76,7 +76,7 @@
         line-height: 14.36px;
         text-align: left;
         color: #877b6f;
-        padding: 15px 12px;
+        padding: 10px 12px;
 
         &.active {
           color: #feba30;
@@ -207,4 +207,12 @@
       }
     }
   }
+ .dropdown-toggle::after {
+    content: "┏";
+    border: none;
+    transform: rotate(224deg);
+    padding-bottom: 2px;
+    padding-right: 2px;
+    vertical-align: baseline;
+}
 }

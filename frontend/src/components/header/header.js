@@ -8,8 +8,8 @@ import { LinkContainer } from "react-router-bootstrap";
 const Header = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [hoveredImages, setHoveredImages] = useState({
-    "About BJS": process.env.PUBLIC_URL + "images/about-default.webp", 
-    "Us" : process.env.PUBLIC_URL + "images/us-default.png",
+    "About BJS": process.env.PUBLIC_URL + "images/about-default.webp",
+    Us: process.env.PUBLIC_URL + "images/us-default.png",
   });
 
   const menuItems = [
@@ -27,7 +27,7 @@ const Header = () => {
         },
         {
           name: "what makes bjs different",
-          link: "/our-values",
+          link: "/our-difference",
           image: process.env.PUBLIC_URL + "images/about-different.webp",
         },
         {
@@ -37,17 +37,17 @@ const Header = () => {
         },
         {
           name: "charity & community",
-          link: "/technology",
+          link: "/charity-community",
           image: process.env.PUBLIC_URL + "images/about-technology.webp",
         },
         {
           name: "training academy",
-          link: "/technology",
+          link: "/training-academy",
           image: process.env.PUBLIC_URL + "images/about-technology.webp",
         },
         {
           name: "our story",
-          link: "/technology",
+          link: "/our-story",
           image: process.env.PUBLIC_URL + "images/about-technology.webp",
         },
       ],
@@ -82,8 +82,6 @@ const Header = () => {
     }));
   };
 
-
-
   const handleToggle = (isOpen) => {
     setShowDropdown(isOpen);
   };
@@ -110,17 +108,16 @@ const Header = () => {
             className="justify-content-end"
           >
             <Nav className="mainNavigation">
-            {menuItems.map((item, index) => {
-            const sanitizedClassName = item.name.replace(/\s+/g, '-');
-            return item.subMenu ? (
-              <NavDropdown
-                title={item.name}
-                id={`nav-dropdown-${index}`}
-                key={index}
-                className={`custom-dropdown ${sanitizedClassName}`} 
-              >
+              {menuItems.map((item, index) => {
+                const sanitizedClassName = item.name.replace(/\s+/g, "-");
+                return item.subMenu ? (
+                  <NavDropdown
+                    title={item.name}
+                    id={`nav-dropdown-${index}`}
+                    key={index}
+                    className={`custom-dropdown ${sanitizedClassName}`}
+                  >
                     <div className="dropdown-menu-container">
-                      
                       <div className="dropdown-items">
                         {item.subMenu.map((subItem, subIndex) => (
                           <LinkContainer to={subItem.link} key={subIndex}>
@@ -149,15 +146,21 @@ const Header = () => {
                   <LinkContainer to={item.link} key={index}>
                     <Nav.Link>{item.name}</Nav.Link>
                   </LinkContainer>
-                )
-})}
-            </Nav> 
+                );
+              })}
+            </Nav>
           </Navbar.Collapse>
           <Nav className="me-auto navbarsecond">
             <Nav.Link href="#home">
               <button className="talktous">Talk to us</button>
             </Nav.Link>
-            <NavDropdown title="Us" id="basic-nav-dropdown" className="flags" show={showDropdown} onToggle={handleToggle}>
+            <NavDropdown
+              title="Us"
+              id="basic-nav-dropdown"
+              className="flags"
+              show={showDropdown}
+              onToggle={handleToggle}
+            >
               <h5>Choose your region</h5>
               <div className="regional-drop">
                 <div>
