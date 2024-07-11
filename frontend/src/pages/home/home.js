@@ -22,8 +22,8 @@ const Home = () => {
 
                             <div className='row justify-content-between'>
 
-                                <div className='col-lg-6 col-sm-12'><button><a href="">Learn more about our values</a></button></div>
-                                <div className='col-lg-6 col-sm-12'><button className='bjsServices'><a href=""><span>BJS</span> Services</a></button></div>
+                                <div className='col-lg-6 col-md-6 col-sm-12'><button><a href="">Learn more about our values</a></button></div>
+                                <div className='col-lg-6 col-md-6 col-sm-12'><button className='bjsServices'><a href=""><span>BJS</span> Services</a></button></div>
                             </div>
 
                         </div>
@@ -66,7 +66,7 @@ const Home = () => {
                                 <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
                             </svg></button></div>
                         </div>
-                        <div className='col-lg-5 col-md-12 col-sm-12'><img src={process.env.PUBLIC_URL + "/images/sofaimage.jpg"} alt="" width="100%" /></div>
+                        <div className='col-lg-5 col-md-12 col-sm-12 img-sec'><img src={process.env.PUBLIC_URL + "/images/sofaimage.jpg"} alt="" width="100%" /></div>
                     </div>
 
                 </div>
