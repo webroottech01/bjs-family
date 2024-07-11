@@ -61,6 +61,7 @@ const Testimonial = ({ imgSrc, partnerLogo, quote, description, name, title, col
         <p>{description}</p>
         <h5><b>{name}</b></h5>
         <h5>{title}</h5>
+        <img src={process.env.PUBLIC_URL + partnerLogo} alt={`${name} Partner Logo`} className="partenrs-logo mob" />
       </div>
     </div>
   </div>

@@ -9,7 +9,7 @@
   }
 
   .container-xy {
-    max-width: 1420px; 
+    max-width: 1420px;
     margin: 0 auto;
     padding: 0 15px;
   }
@@ -85,4 +85,46 @@
   .training-ac-layout {
     padding-top: 10px;
   }
+}
+
+//Responsive
+@media screen and (max-width: 1710px) {
+  .about-training-academy {
+    .different-technology .section-content {
+      background: transparent;
+      background-image: url("/../public/images/Clip path group (1).jpg");
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+    }
+    .different-technology .left-column-sc {
+      background: #70c6f0;
+    }
+    .different-technology img {
+      display: none;
+    }
+    .gallery .col.left-column,
+    .gallery .col.right-column {
+      overflow: hidden;
+      width: 49%;
+    }
+    .gallery .gallery-out {
+      overflow: hidden;
+    }
+  }
+}
+
+@media screen and (max-width: 1425px) {
+  .about-training-academy {
+    width: 100%;
+    overflow-x: hidden;
+    
+    .container-xy {
+      max-width: 90%;
+    }
+
+    .training-academy .right-column img {
+      width: 100%;
+    }
+  } 
 }
