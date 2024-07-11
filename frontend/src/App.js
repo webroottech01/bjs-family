@@ -10,6 +10,9 @@ import Technology from './pages/about/technology/technology';
 import Ourvalues from './pages/about/our-values/our-values';
 import Footer from './components/footer/footer'; 
 import OurDifference from './pages/about/our-difference/our-difference';
+import TrainingAcademy from './pages/about/training-academy/training-academy';
+import Archivepage from './pages/news/archive-page/archive';
+
 
 
 function App() { 
@@ -21,11 +24,14 @@ function App() {
         <Routes>
           <Route path="/news" element={<Newspage />} />
           <Route path="/article/:id" element={<Articlepage />} />
+          <Route path="archive" element={<Archivepage />} />
           <Route path="/services" element={<Servicepage />} />
           <Route path="/" element={<Home />} />
           <Route path="/technology" element={<Technology />} />
           <Route path="/our-values" element={<Ourvalues />} /> 
           <Route path="/our-difference" element={<OurDifference />} />
+          <Route path="/training-academy" element= {<TrainingAcademy />} />
+
         </Routes>
 
         <Footer />

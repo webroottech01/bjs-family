@@ -6,9 +6,10 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import { LinkContainer } from "react-router-bootstrap";
 
 const Header = () => {
+  const [showDropdown, setShowDropdown] = useState(false);
   const [hoveredImages, setHoveredImages] = useState({
-    "About BJS": process.env.PUBLIC_URL + "images/about-delivery.png",
-    Us: process.env.PUBLIC_URL + "images/us-default.png",
+    "About BJS": process.env.PUBLIC_URL + "images/about-default.webp", 
+    "Us" : process.env.PUBLIC_URL + "images/us-default.png",
   });
 
   const menuItems = [
@@ -22,15 +23,35 @@ const Header = () => {
         {
           name: "Our Values",
           link: "/our-values",
-          image: process.env.PUBLIC_URL + "images/about-delivery.png",
+          image: process.env.PUBLIC_URL + "images/about-values.webp",
         },
         {
-          name: "Technology",
+          name: "what makes bjs different",
+          link: "/our-values",
+          image: process.env.PUBLIC_URL + "images/about-different.webp",
+        },
+        {
+          name: "Our Technology",
           link: "/technology",
-          image: process.env.PUBLIC_URL + "images/julian.jpg",
+          image: process.env.PUBLIC_URL + "images/about-technology.webp",
+        },
+        {
+          name: "charity & community",
+          link: "/technology",
+          image: process.env.PUBLIC_URL + "images/about-technology.webp",
+        },
+        {
+          name: "training academy",
+          link: "/technology",
+          image: process.env.PUBLIC_URL + "images/about-technology.webp",
+        },
+        {
+          name: "our story",
+          link: "/technology",
+          image: process.env.PUBLIC_URL + "images/about-technology.webp",
         },
       ],
-      defaultImage: process.env.PUBLIC_URL + "images/about-delivery.png",
+      defaultImage: process.env.PUBLIC_URL + "images/about-default.webp",
     },
     {
       name: "News",
@@ -61,6 +82,16 @@ const Header = () => {
     }));
   };
 
+
+
+  const handleToggle = (isOpen) => {
+    setShowDropdown(isOpen);
+  };
+
+  const handleClose = () => {
+    setShowDropdown(false);
+  };
+
   return (
     <div className="header sticky-top">
       <div className="container">
@@ -79,21 +110,17 @@ const Header = () => {
             className="justify-content-end"
           >
             <Nav className="mainNavigation">
-              {menuItems.map((item, index) =>
-                item.subMenu ? (
-                  <NavDropdown
-                    title={item.name}
-                    id={`nav-dropdown-${index}`}
-                    key={index}
-                    className="custom-dropdown" // Add custom class for styling
-                  >
+            {menuItems.map((item, index) => {
+            const sanitizedClassName = item.name.replace(/\s+/g, '-');
+            return item.subMenu ? (
+              <NavDropdown
+                title={item.name}
+                id={`nav-dropdown-${index}`}
+                key={index}
+                className={`custom-dropdown ${sanitizedClassName}`} 
+              >
                     <div className="dropdown-menu-container">
-                      <div className="dropdown-image">
-                        <img
-                          src={hoveredImages[item.name] || item.defaultImage}
-                          alt="Hovered"
-                        />
-                      </div>
+                      
                       <div className="dropdown-items">
                         {item.subMenu.map((subItem, subIndex) => (
                           <LinkContainer to={subItem.link} key={subIndex}>
@@ -110,6 +137,12 @@ const Header = () => {
                           </LinkContainer>
                         ))}
                       </div>
+                      <div className="dropdown-image">
+                        <img
+                          src={hoveredImages[item.name] || item.defaultImage}
+                          alt="Hovered"
+                        />
+                      </div>
                     </div>
                   </NavDropdown>
                 ) : (
@@ -117,14 +150,14 @@ const Header = () => {
                     <Nav.Link>{item.name}</Nav.Link>
                   </LinkContainer>
                 )
-              )}
-            </Nav>
+})}
+            </Nav> 
           </Navbar.Collapse>
           <Nav className="me-auto navbarsecond">
             <Nav.Link href="#home">
               <button className="talktous">Talk to us</button>
             </Nav.Link>
-            <NavDropdown title="Us" id="basic-nav-dropdown" className="flags">
+            <NavDropdown title="Us" id="basic-nav-dropdown" className="flags" show={showDropdown} onToggle={handleToggle}>
               <h5>Choose your region</h5>
               <div className="regional-drop">
                 <div>
@@ -138,9 +171,9 @@ const Header = () => {
                     bespoke forage jean shorts blackbird spyplane helvetica
                     edison bulb eiusmod scenester.
                   </p>
-                  <a href="#" className="currentregion" disabled>
+                  <button className="currentregion" disabled>
                     Currently viewing
-                  </a>
+                  </button>
                 </div>
                 <div>
                   <img
@@ -153,11 +186,12 @@ const Header = () => {
                     bespoke forage jean shorts blackbird spyplane helvetica
                     edison bulb eiusmod scenester.
                   </p>
-                  <a href="#" className="currentregion">
+                  <a href="#" className="otherregion">
                     Switch to UK Site
                   </a>
                 </div>
               </div>
+              <button onClick={handleClose}>Close this window</button>
             </NavDropdown>
           </Nav>
         </Navbar>

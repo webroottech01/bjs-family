@@ -1,7 +1,7 @@
 import React from "react";
 import "./differenttechnology.scss";
 
-const DifferentTechnology = ({ title, content, link, imageUrl1, imageUrl2, layout, customClass }) => {
+const DifferentTechnology = ({ title, content, customContent, link, imageUrl1, imageUrl2, layout, customClass }) => {
   return (
     <div className={`different-technology ${customClass || ''}`}>
       {layout === 'layout1' && (
@@ -10,6 +10,7 @@ const DifferentTechnology = ({ title, content, link, imageUrl1, imageUrl2, layou
             <div className="title-column">
               <h2>{title}</h2>
               <p>{content}</p>
+              <p>{customContent}</p>
               <a href={link}>Learn More</a>
             </div>
           </div>
@@ -26,6 +27,7 @@ const DifferentTechnology = ({ title, content, link, imageUrl1, imageUrl2, layou
             <div className="title-column">
               <h2>{title}</h2>
               <p>{content}</p>
+              <p>{customContent}</p>
               <a href={link}>Learn More</a>
             </div>
           </div>

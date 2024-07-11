@@ -46,6 +46,7 @@ const Technology = () => {
         content="We provide the very best customer service at every stage of the delivery process, putting customers at the heart of everything we do – so that your products, reputation, customers and peace of mind really are safe in our hands."
         link="#"
         imageUrl1="/images/Clip path group_11zon.jpg"
+        customClass="blue-bg"
       />
       <Withbigbulky></Withbigbulky>
       
@@ -53,7 +54,7 @@ const Technology = () => {
       <div className='newsPartners'>
         <h2 className='text-center'>Our Partners</h2>
         <Partners />
-      </div>
+      </div> 
       </div></div>
   );
 }
