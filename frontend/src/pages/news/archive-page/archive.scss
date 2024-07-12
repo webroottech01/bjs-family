@@ -19,10 +19,10 @@
         }
         button {
             border-radius: 66px;
-            background: rgba(255, 255, 255, 0.10);
+            background: rgba(255, 255, 255, 0.1);
             padding: 6px 15px;
             color: #fff;
-            font-family: 'Gotham Bold';
+            font-family: "Gotham Bold";
         }
         a {
             border-radius: 66px;
@@ -200,18 +200,18 @@
     .showMoreButton {
         width: fit-content;
         border-radius: 6px;
-        border: 1px solid var(--BJS-Light-Gray, #C5D1DC);
+        border: 1px solid var(--BJS-Light-Gray, #c5d1dc);
         padding: 20px 60px;
-        color: #747E87;
+        color: #747e87;
         text-transform: uppercase;
-        font-family: 'Gotham Bold';
+        font-family: "Gotham Bold";
 
         &:before {
             position: absolute;
             content: "";
             width: 38%;
             height: 1px;
-            background: #D1D6D8;
+            background: #d1d6d8;
             left: 0;
             top: 34px;
         }
@@ -220,10 +220,115 @@
             content: "";
             width: 38%;
             height: 1px;
-            background: #D1D6D8;
+            background: #d1d6d8;
             right: 0;
             top: 34px;
         }
     }
-    
+}
+
+// RESPONSIVE
+
+@media only screen and (max-width: 1250px) {
+    .archiveWrapper {
+        .archiveMain {
+            .container {
+                max-width: 90%;
+                margin: 0 auto;
+            }
+        }
+        .showMoreButton {
+            padding: 12px 29px;
+            font-size: 14px;
+        }
+        .showMoreButton {
+            &:before {
+                width: 40%;
+                top: 23px;
+            }
+            &:after {
+                width: 40%;
+                top: 23px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .archiveWrapper {
+        .archiveMain {
+            .imageSection {
+                h3 {
+                    font-size: 12px;
+                }
+                .timeLink {
+                    margin-top: 24px;
+                    .readLink {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .archiveWrapper {
+        .archivewrapperInner {
+            button {
+                font-size: 10px;
+            }
+        }
+        .archiveMain {
+            .imageSection {
+                .mainImg {
+                    img {
+                        width: 100%;
+                    }
+                    .mainImgContent {
+                        flex-direction: column;
+                        align-items: start;
+                        .articleListdescrip {
+                            width: 100%;
+                        }
+                    }
+                }
+                .timeLink {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                }
+            }
+            .singleNews {
+                flex-direction: column;
+            }
+        }
+        .showMoreButton {
+            &:before {
+                width: 36%;
+            }
+            &:after {
+                width: 36%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .archiveWrapper {
+        .archivewrapperInner {
+            .introSection {
+                flex-direction: column;
+                gap: 25px;
+            }
+        }
+        .showMoreButton {
+            &:before {
+                width: 26%;
+            }
+            &:after {
+                width: 26%;
+            }
+        }
+    }
 }

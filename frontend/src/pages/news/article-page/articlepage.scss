@@ -128,9 +128,9 @@
     }
     .articleLastsec {
         padding: 40px 0 20px 30px;
-        gap : 15px;
-        text-align : left;
-        border-top: 1px solid var(--BJS-Light-Gray, #C5D1DC);
+        gap: 15px;
+        text-align: left;
+        border-top: 1px solid var(--BJS-Light-Gray, #c5d1dc);
         p {
             color: var(--BJS-Mid-Gray, #747e87);
             font-family: "Gotham Book";
@@ -149,6 +149,80 @@
             line-height: 18px; /* 128.571% */
             text-decoration-line: underline;
             width: 62%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .articlepageMain {
+        .articleContentMain {
+            max-width: 54%;
+            .whatSaid {
+                img {
+                    width: 34px;
+                    padding: 20px 0;
+                }
+                h4 {
+                    padding: 12px 0;
+                }
+            }
+            h2 {
+                font-size: 16px;
+            }
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .articlepageMain {
+        .articlepage {
+            .d-flex {
+                flex-direction: column;
+                gap: 20px;
+            }
+            button {
+                padding: 9px 18px;
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+        .articleContentMain {
+            max-width: 70%;
+            .row {
+                flex-direction: column;
+            }
+            .descriptionArticles {
+                padding: 0 !important;
+            }
+            .articlesocialMedia {
+                flex-direction: row;
+                gap: 10px;
+                align-items: center;
+                margin-bottom: 30px;
+                h4 {
+                    margin: 0;
+                }
+            }
+        }
+        .articleLastsec {
+            padding: 40px 0 20px;
+            flex-direction: column;
+            align-items: start !important;
+            a {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .articlepageMain {
+        .articleContentMain {
+            max-width: 90%;
         }
     }
 }
