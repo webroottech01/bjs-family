@@ -74,6 +74,9 @@
             }
         }
 
+        .listnewsMobile {
+            display: none;
+        }
         .listNews {
             padding-left: 30px;
             .singleNews {
@@ -346,6 +349,9 @@
             .listnewsDesktop {
                 display: none;
             }
+            .listnewsMobile {
+                display: block;
+            }
             .listNews {
                 .singleNews {
                     .mainImgContent {
@@ -468,6 +474,21 @@
         .newstestimonial {
             .testimonialMain {
                 padding-top: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1210px) {
+    .newsMain {
+        .newsPartners {
+            h2 {
+                &:before {
+                    width: 34%;
+                }
+                &:after {
+                    width: 34%;
+                }
             }
         }
     }

@@ -11,7 +11,7 @@
     height: 60px;
   }
   .slick-next {
-    right: 0;
+    right: 38px;
     top: 2px !important;
     &:before {
       content: "" !important;
@@ -197,7 +197,7 @@
 @media only screen and (max-width:768px) {
     .partnerslider {
         .slick-next {
-            right: 0;
+            right: 9px;
         }    
         .slick-prev {
             left: -20px;
