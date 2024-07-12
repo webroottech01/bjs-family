@@ -208,3 +208,57 @@
 }
     
 }
+
+
+@media screen and (max-width:768px) {
+.md-message {
+    .md-xm-mid {
+        width: 65%;
+    }
+    .md-info{
+        width:35%;
+    }
+}
+
+}
+
+
+@media screen and (max-width:500px) {
+.md-message {
+    padding: 25px 0;
+    .md-quote {
+        padding: 0;
+        img {
+            margin-bottom: 12px;
+            width: 25px;
+        }
+    }
+    h3 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .md-xm-mid {
+        width: 100%;
+        padding: 5px 0px 0;
+    }
+    .md-info {
+        width: 100%;
+        justify-content: left;
+        img {
+            height: 50px;
+        }
+        h5 {
+            font-size: 12px;
+            margin-bottom: 3px;
+            b {
+                font-size: 13px;
+            }
+        }
+        .md-profile {
+            padding-left: 12px;
+        }
+    }
+}
+
+
+}
