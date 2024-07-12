@@ -9,7 +9,7 @@ const Footer = () => {
     <div className='site-footer'>
         <div className='fotr-container'>
             <div className="row justify-content-between">
-                <div className="col-lg-8 col-md-12 col-sm-12">
+                <div className="col-md-8 col-sm-8">
                     <div className="leftColm d-flex">
                         <div className="fotrAbout">
                             <h3>About BJS</h3>            
@@ -27,7 +27,7 @@ const Footer = () => {
                                 <div><a href="#"><img src={process.env.PUBLIC_URL + "/images/Linkdin-fotr.png"} alt="" /></a></div>
                             </div>                      
                         </div>
-                        <div className="fotrServices">
+                        <div className="fotrServices"> 
                             <h3>Our Services</h3>
                             <Nav className="d-block">
                                 <Nav.Link href="#">Two-Man Home Delivery</Nav.Link>                                                          
@@ -43,7 +43,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-4 col-md-12 col-sm-12 rightColm text-end">
+                <div className="col-md-4 col-sm-4 rightColm text-end">
                     <p><a href="mailto:hello@bjsfamily.com">hello@bjsfamily.com</a></p>
                     <a href="#"><button className="headOffice">BJS head office</button></a>
                     <h4>retire.grow.empire</h4>
