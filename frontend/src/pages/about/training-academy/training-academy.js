@@ -14,7 +14,7 @@ const imagesForGallery = {
     "/images/image 44.jpg",
     "/images/image 45.jpg",
     "/images/image 46.jpg"
-  ]
+  ] 
 };
 
 const TrainingAcademy = () => {

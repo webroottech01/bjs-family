@@ -245,4 +245,102 @@
     .blue-bg .section-content {
         background: #70C6F0;
     }
+
+    .partenrs-logo.mob {
+        display: none;
+    }
+}
+
+//Responsive
+@media screen and (max-width: 1710px) {
+    .our-difference {
+        width: 100%;
+        overflow-x: hidden;
+
+        .container-xy {
+            max-width: 90%;
+        }
+
+        .team-sec.right-column .profile-xmlogo {
+            padding-top: 1rem;
+        }
+
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .our-difference {
+        .team-sec.mid-column .profile-xmlogo {
+            padding-top: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1425px) {
+    .our-difference {
+        .team-sec.mid-column .profile-xmlogo, .team-sec.right-column .profile-xmlogo {
+            padding-top: 1.6rem;
+        }
+        .team-sec.right-column .profile-xmlogo {
+            margin-top: 23px;
+        }
+        section.our-team .team-sec {
+            padding: 0 15px !important;
+        }
+        .team-sec.mid-column {
+            padding: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .our-difference {
+        .sec-content h3 {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        .team-sec.right-column .profile-xmlogo {
+            margin-top: 67px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .our-difference {
+        .container-xy {
+            padding: 0 10px;
+        }
+        .partenrs-logo {
+            display: none;
+        }
+        .two-column-sec .differ-colum-two {
+            display: block;
+        }
+        .partenrs-logo.mob {
+            display: block;
+        }
+        section.our-team .team-quote { 
+            display: block;
+        }
+        section.our-team .profile-xmlogo {
+            display: block;
+            text-align: left;
+        }
+        .team-sec.mid-column .profile-xmlogo, .team-sec.right-column .profile-xmlogo {
+            padding-top: 0 ;
+            margin-top: 30px;
+        }
+        section.our-team .profile-xmlogo .logo {
+            padding-top: 1.2rem;
+        }
+        .two-column-sec .right-column {
+            padding-left: inherit;
+        }
+        .two-column-sec .left-column, .two-column-sec .right-column {
+            margin-bottom: 1rem;
+        }
+        section.our-team .team-sec {
+             margin-bottom: 1rem;
+        }
+    }
 }
